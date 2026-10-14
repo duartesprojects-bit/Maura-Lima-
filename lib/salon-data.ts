@@ -766,10 +766,10 @@ export const HERO_SLIDES = [
     ctaLink:
       "https://wa.me/558532247040?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20C%C3%ADlios%2C%20Cabelo%20ou%20Maquiagem%20na%20Maura%20Lima.",
     image:
-      "/images/cilios.jpg",
+      "/images/cabelo.jpg",
     video:
-      "https://assets.mixkit.co/videos/preview/mixkit-young-woman-applying-mascara-on-her-eyelashes-40739-large.mp4",
-    alt: "Produção de cílios e estética do olhar completa",
+      "/videos/cabelo.mp4",
+    alt: "Produção de cabelo, beleza e estética na Maura Lima Aldeota",
   },
 ];
 

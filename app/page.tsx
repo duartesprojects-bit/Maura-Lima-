@@ -39,44 +39,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          {/* 3 Pillars */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
-            <div className="p-8 bg-[#F9F5EC] border border-[#C9A24B]/30 hover:border-[#C9A24B] rounded-2xl shadow-sm transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#0D0D0D] text-[#C9A24B] mb-6 shadow-md">
-                <Sparkles className="w-6 h-6" />
-              </div>
-              <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-[#0D0D0D] mb-3">
-                Mapeamento Exclusivo
-              </h3>
-              <p className="text-sm text-neutral-600 font-light leading-relaxed">
-                Estudo anatômico individual para desenhar sobrancelhas que respeitam e valorizam as linhas do seu rosto, sem modismos passageiros ou afinamentos.
-              </p>
-            </div>
 
-            <div className="p-8 bg-[#F9F5EC] border border-[#C9A24B]/30 hover:border-[#C9A24B] rounded-2xl shadow-sm transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#0D0D0D] text-[#C9A24B] mb-6 shadow-md">
-                <Award className="w-6 h-6" />
-              </div>
-              <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-[#0D0D0D] mb-3">
-                Laser Ömer 3D
-              </h3>
-              <p className="text-sm text-neutral-600 font-light leading-relaxed">
-                A tecnologia mais seletiva e segura para remover micropigmentações antigas e desbotadas em tons avermelhados, preservando integralmente os pelos.
-              </p>
-            </div>
-
-            <div className="p-8 bg-[#F9F5EC] border border-[#C9A24B]/30 hover:border-[#C9A24B] rounded-2xl shadow-sm transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#0D0D0D] text-[#C9A24B] mb-6 shadow-md">
-                <Shield className="w-6 h-6" />
-              </div>
-              <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-[#0D0D0D] mb-3">
-                Pontualidade & Conforto
-              </h3>
-              <p className="text-sm text-neutral-600 font-light leading-relaxed">
-                Atendimento exclusivamente com hora marcada na Aldeota. Sala climatizada, biossegurança rigorosa e café gourmet para o seu bem-estar.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

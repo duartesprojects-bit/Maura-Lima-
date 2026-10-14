@@ -36,12 +36,12 @@ export default function HeroCarousel() {
     }
   }, [currentIndex]);
 
-  // Auto advance: wait full 8 seconds for the video to finish before changing slide
+  // Auto advance: wait for video to finish or default interval before changing slide
   useEffect(() => {
     if (!isPlaying) return;
 
-    // Slide 1 has the 8-second video: ensure it plays all 8 seconds (8000ms)
-    const duration = currentSlide.id === 1 ? 8000 : 6000;
+    // Slide 1 has the 8-second video; Slide 4 has the 14-second cabelo.mp4 video
+    const duration = currentSlide.id === 1 ? 8000 : currentSlide.id === 4 ? 14000 : 6000;
 
     const timer = setTimeout(() => {
       nextSlide();
