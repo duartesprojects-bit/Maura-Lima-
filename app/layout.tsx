@@ -22,13 +22,13 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mauralima-fortaleza.com.br'),
+  metadataBase: new URL('https://mauralima.com.br'),
   title: {
-    default: 'Maura Lima – Specialist Eyebrows | Salão em Fortaleza (Aldeota)',
+    default: 'Maura Lima – Specialist Eyebrows | Salão e Cursos em Fortaleza (Aldeota e Maison Sul)',
     template: '%s | Maura Lima Fortaleza',
   },
   description:
-    'Especialista em Design de Sobrancelhas, Remoção a Laser Ömer 3D, Cílios Volume Brasileiro, Cabelo e Maquiagem na Aldeota em Fortaleza. Agende pelo WhatsApp.',
+    'Especialista em Design de Sobrancelhas, Remoção a Laser Ömer 3D, Cílios Volume Brasileiro, Cabelo, Maquiagem e Cursos Profissionais de Estética na Aldeota e Maison Sul em Fortaleza. Agende pelo WhatsApp.',
   keywords: [
     'sobrancelhas fortaleza',
     'maura lima fortaleza',
@@ -38,6 +38,8 @@ export const metadata: Metadata = {
     'salao aldeota fortaleza',
     'maquiagem profissional fortaleza',
     'loiro iluminado aldeota',
+    'cursos de sobrancelhas fortaleza',
+    'maura lima maison sul',
   ],
   authors: [{ name: 'Maura Lima Fortaleza' }],
   creator: 'Maura Lima',
@@ -46,20 +48,25 @@ export const metadata: Metadata = {
     telephone: true,
     address: true,
   },
+  icons: {
+    icon: '/MauraLimaLogo.png',
+    shortcut: '/MauraLimaLogo.png',
+    apple: '/MauraLimaLogo.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://mauralima-fortaleza.com.br',
+    url: 'https://mauralima.com.br',
     siteName: 'Maura Lima – Specialist Eyebrows Fortaleza',
-    title: 'Maura Lima – Specialist Eyebrows | Salão em Fortaleza (Aldeota)',
+    title: 'Maura Lima – Specialist Eyebrows | Salão e Cursos em Fortaleza (Aldeota e Maison Sul)',
     description:
-      'Referência em design de sobrancelhas, remoção a laser Ömer 3D e estética facial de alto padrão em Fortaleza.',
+      'Referência em design de sobrancelhas, remoção a laser Ömer 3D, estética facial e cursos profissionais em Fortaleza.',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80',
+        url: '/MauraLimaLogo.png',
         width: 1200,
         height: 630,
-        alt: 'Salão Maura Lima Specialist Eyebrows em Fortaleza',
+        alt: 'Maura Lima Specialist Eyebrows Fortaleza',
       },
     ],
   },
@@ -67,8 +74,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Maura Lima – Specialist Eyebrows Fortaleza',
     description:
-      'Design de sobrancelhas, remoção a laser Ömer 3D, cílios e maquiagem na Aldeota.',
-    images: ['https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80'],
+      'Design de sobrancelhas, remoção a laser Ömer 3D, cílios, maquiagem e cursos na Aldeota e Maison Sul.',
+    images: ['/MauraLimaLogo.png'],
   },
   robots: {
     index: true,
@@ -87,7 +94,7 @@ export default function RootLayout({
     name: SALON_INFO.name,
     image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80',
     telephone: SALON_INFO.phoneDisplay,
-    url: 'https://mauralima-fortaleza.com.br',
+    url: 'https://mauralima.com.br',
     priceRange: '$$$',
     address: {
       '@type': 'PostalAddress',

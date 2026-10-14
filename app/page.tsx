@@ -33,7 +33,7 @@ export default function HomePage() {
               A ARTE DE REALÇAR A SUA BELEZA COM NATURALIDADE
             </h2>
             <div className="w-16 h-[2px] bg-[#C9A24B] mx-auto mb-6" />
-            <p className="text-base sm:text-lg text-neutral-600 font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-neutral-700 font-normal leading-relaxed">
               No coração da Aldeota, em Fortaleza, a Maura Lima une precisão cirúrgica no design de sobrancelhas,
               a avançada tecnologia do laser Ömer 3D e uma atmosfera serena para proporcionar uma experiência de autocuidado singular.
             </p>
@@ -55,7 +55,7 @@ export default function HomePage() {
                 NOSSOS SERVIÇOS EM FORTALEZA
               </h2>
             </div>
-            <p className="text-sm text-neutral-600 max-w-md font-light leading-relaxed">
+            <p className="text-sm text-neutral-700 max-w-md font-normal leading-relaxed">
               Procedimentos executados por especialistas formadas no método exclusivo Maura Lima, com materiais esterilizados e dermocosméticos de primeira linha.
             </p>
           </div>
@@ -90,7 +90,7 @@ export default function HomePage() {
                     <h3 className="font-heading text-lg font-bold text-[#0D0D0D] uppercase tracking-wide group-hover:text-[#C9A24B] transition-colors mb-3">
                       {service.name}
                     </h3>
-                    <p className="text-sm text-neutral-600 font-light line-clamp-3 leading-relaxed mb-6">
+                    <p className="text-sm text-neutral-700 font-normal line-clamp-3 leading-relaxed mb-6">
                       {service.shortSummary}
                     </p>
                   </div>
@@ -148,7 +148,7 @@ export default function HomePage() {
                   <h3 className="font-heading text-lg font-bold text-[#C9A24B] uppercase tracking-wide mb-3">
                     Cursos Profissionais Maura Lima
                   </h3>
-                  <p className="text-sm text-neutral-300 font-light line-clamp-3 leading-relaxed mb-6">
+                  <p className="text-sm text-neutral-200 font-normal line-clamp-3 leading-relaxed mb-6">
                     Aprenda o método exclusivo de design de sobrancelhas, visagismo e técnicas avançadas com certificação oficial e alta empregabilidade no mercado da estética.
                   </p>
                 </div>
@@ -181,7 +181,7 @@ export default function HomePage() {
                 <h3 className="font-heading text-xl font-bold uppercase tracking-wider mb-4 leading-snug">
                   Dúvidas sobre qual o melhor procedimento para o seu olhar?
                 </h3>
-                <p className="text-sm text-neutral-300 font-light leading-relaxed mb-6">
+                <p className="text-sm text-neutral-200 font-normal leading-relaxed mb-6">
                   Nossas consultoras analisam seu caso e orientam o tratamento mais indicado, seja para iniciar a remoção com laser Ömer 3D ou para conquistar o design perfeito.
                 </p>
               </div>
@@ -467,15 +467,16 @@ export default function HomePage() {
                     <MessageCircle className="w-4 h-4 fill-current" />
                     <span>Agendar nesta Unidade</span>
                   </a>
-                  {idx === 0 && (
+                  {unit.directionsUrl && (
                     <a
-                      href={SALON_INFO.googleMapsDirectionsUrl}
+                      href={unit.directionsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center p-3 border border-neutral-300 hover:border-[#0D0D0D] rounded-xl text-neutral-700 hover:text-[#0D0D0D] transition-all bg-white"
-                      aria-label="Ver rota no Google Maps"
+                      className="inline-flex items-center justify-center gap-1.5 py-3 px-4 border border-neutral-300 hover:border-[#0D0D0D] rounded-xl text-neutral-700 hover:text-[#0D0D0D] transition-all bg-white text-xs font-semibold uppercase tracking-wider"
+                      aria-label={`Como chegar na unidade ${unit.name}`}
                     >
-                      <ExternalLink className="w-4 h-4" />
+                      <ExternalLink className="w-4 h-4 text-[#C9A24B]" />
+                      <span>Como Chegar</span>
                     </a>
                   )}
                 </div>

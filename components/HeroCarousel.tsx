@@ -128,7 +128,7 @@ export default function HeroCarousel() {
           </h1>
 
           {/* Descrição Leve e Elegante */}
-          <p className="text-base sm:text-xl lg:text-2xl text-white font-light leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+          <p className="text-base sm:text-xl lg:text-2xl text-white font-normal leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
             {currentSlide.description}
           </p>
 

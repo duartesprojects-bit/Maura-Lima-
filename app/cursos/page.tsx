@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'Cursos Profissionais Maura Lima Fortaleza',
     description:
       'Formação profissional de excelência em design de sobrancelhas e micropigmentação na Aldeota.',
-    url: 'https://mauralima-fortaleza.com.br/cursos',
+    url: 'https://mauralima.com.br/cursos',
     type: 'website',
   },
   alternates: {
@@ -48,7 +48,7 @@ export default function CoursesPage() {
           <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-[0.05em] uppercase mb-6 leading-tight">
             CURSOS PROFISSIONAIS NA ALDEOTA
           </h1>
-          <p className="text-base sm:text-xl text-neutral-300 font-light max-w-3xl leading-relaxed">
+          <p className="text-base sm:text-xl text-neutral-200 font-normal max-w-3xl leading-relaxed">
             Capacite-se com métodos exclusivos e técnicas validadas de alto padrão. Torne-se uma referência em design de sobrancelhas e micropigmentação em Fortaleza.
           </p>
         </div>
@@ -65,7 +65,7 @@ export default function CoursesPage() {
               ESCOLHA SUA ESPECIALIZAÇÃO
             </h2>
             <div className="w-16 h-[2px] bg-[#C9A24B] mx-auto mb-6" />
-            <p className="text-base text-neutral-600 font-light leading-relaxed">
+            <p className="text-base text-neutral-700 font-normal leading-relaxed">
               Todos os cursos incluem material completo, certificado oficial de conclusão e suporte prático para iniciar na profissão com segurança.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function CoursesPage() {
                 className="bg-white border border-neutral-200 hover:border-[#C9A24B] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
-                  <div className="relative h-64 w-full overflow-hidden bg-neutral-900">
+                  <div className="relative aspect-square w-full overflow-hidden bg-neutral-900">
                     {course.image && (
                       <Image
                         src={course.image}
@@ -88,16 +88,16 @@ export default function CoursesPage() {
                       />
                     )}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-                    <div className="absolute top-4 left-4">
+                    <div className="absolute bottom-4 left-4 right-4 flex flex-col items-start gap-2">
                       <span className="px-3 py-1 bg-[#C9A24B] text-[#0D0D0D] text-[10px] font-bold uppercase tracking-widest rounded-full shadow">
                         Vagas Abertas
                       </span>
-                    </div>
-                    <div className="absolute bottom-4 left-4 right-4">
-                      <h3 className="font-heading text-lg font-bold text-white uppercase tracking-wide">
-                        {course.title}
-                      </h3>
-                      <p className="text-xs text-[#C9A24B] font-medium mt-0.5">{course.subtitle}</p>
+                      <div>
+                        <h3 className="font-heading text-lg font-bold text-white uppercase tracking-wide">
+                          {course.title}
+                        </h3>
+                        <p className="text-xs text-[#C9A24B] font-medium mt-0.5">{course.subtitle}</p>
+                      </div>
                     </div>
                   </div>
 

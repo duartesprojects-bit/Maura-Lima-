@@ -71,7 +71,7 @@ export default function Navbar() {
           {/* Brand Logo - 100% legible on white */}
           <Link href="/" className="group flex items-center py-1">
             <Image
-              src="/images/logo.png"
+              src="/MauraLimaLogo.png"
               alt="Maura Lima – Specialist Eyebrows Fortaleza"
               width={180}
               height={50}

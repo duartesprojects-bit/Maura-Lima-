@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { SERVICES } from '@/lib/salon-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://mauralima-fortaleza.com.br';
+  const baseUrl = 'https://mauralima.com.br';
 
   const serviceUrls = SERVICES.map((service) => ({
     url: `${baseUrl}/servicos/${service.slug}`,

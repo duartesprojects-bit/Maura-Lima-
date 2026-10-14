@@ -22,7 +22,7 @@ export interface ServiceItem {
 export const SALON_INFO = {
   name: "Maura Lima – Specialist Eyebrows",
   tagline: "Specialist Eyebrows & Estética Facial de Alto Padrão",
-  logo: "/images/logo (1).png",
+  logo: "/MauraLimaLogo.png",
   city: "Fortaleza",
   neighborhood: "Aldeota",
   state: "CE",
@@ -40,13 +40,16 @@ export const SALON_INFO = {
       phone: "(85) 3224-7040",
       whatsapp: "(85) 98957-8885",
       whatsappUrl: "https://wa.me/5585989578885?text=Olá!%20Gostaria%20de%20agendar%20na%20unidade%20Aldeota.",
+      directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=R.+Monsenhor+Cat%C3%A3o,+1167+-+Aldeota,+Fortaleza+-+CE,+60175-000",
       hours: "Seg a Sex: 09:00 às 18:00 | Sáb: 09:00 às 17:10",
     },
     {
       name: "Maura Lima Maison Sul",
       address: "Av. Edilson Brasil Soares, 1717 - Fortaleza - CE",
+      phone: "(85) 3224-7040",
       whatsapp: "(85) 98570-1647",
       whatsappUrl: "https://wa.me/5585985701647?text=Olá!%20Gostaria%20de%20agendar%20na%20unidade%20Maison%20Sul.",
+      directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Av.+Edilson+Brasil+Soares,+1717+-+Fortaleza+-+CE",
       hours: "Ter a Sex: 09:00 às 18:00 | Sáb: 09:00 às 17:00",
     },
   ],
@@ -139,7 +142,7 @@ export const COURSES: CourseItem[] = [
     ],
     paymentInfo: "Investimento: R$ 1.500,00 | 10% OFF em espécie ou pix | Parcelamento em até 3x",
     whatsappMessage: "Olá! Gostaria de saber mais informações sobre o Curso Maura Lima Design de Sobrancelhas (R$ 1.500,00).",
-    image: "/images/designdesobramcelha-1.jpg",
+    image: "/curso.jpg",
   },
 ];
 
