@@ -85,26 +85,24 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Column 4: Localização e Contato Direto */}
+          {/* Column 4: Unidades & Contato */}
           <div>
             <h4 className="font-heading text-xs font-bold uppercase tracking-[0.2em] text-white pb-3 mb-4 border-b border-neutral-800 flex items-center justify-between">
-              <span>UNIDADE FORTALEZA</span>
+              <span>UNIDADES FORTALEZA</span>
               <span className="w-6 h-[1px] bg-[#C9A24B]"></span>
             </h4>
-            <div className="space-y-3.5 text-xs text-neutral-300">
-              <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#C9A24B] shrink-0 mt-0.5" />
-                <p className="leading-relaxed">
-                  {SALON_INFO.address}
-                  <span className="block text-[11px] text-neutral-400 mt-0.5">
-                    Bairro nobre da Aldeota, com fácil acesso e estacionamento.
-                  </span>
-                </p>
+            <div className="space-y-4 text-xs text-neutral-300">
+              <div>
+                <p className="font-bold text-white text-xs mb-1">Maura Lima Aldeota:</p>
+                <p className="text-neutral-400 text-[11px] mb-1">R. Monsenhor Catão, 1167</p>
+                <p className="text-[#C9A24B] font-medium">WhatsApp: (85) 98957-8885</p>
+                <p className="text-neutral-400 text-[11px]">Fixo: (85) 3224-7040</p>
               </div>
 
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-[#C9A24B] shrink-0" />
-                <span>Telefone: {SALON_INFO.phoneDisplay}</span>
+              <div className="pt-2 border-t border-neutral-800">
+                <p className="font-bold text-white text-xs mb-1">Maura Lima Maison Sul:</p>
+                <p className="text-neutral-400 text-[11px] mb-1">Av. Edilson Brasil Soares, 1717</p>
+                <p className="text-[#C9A24B] font-medium">WhatsApp: (85) 98570-1647</p>
               </div>
 
               <div className="pt-2">
@@ -112,7 +110,7 @@ export default function Footer() {
                   href={SALON_INFO.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#C9A24B] hover:bg-[#DFBF73] text-[#0D0D0D] font-bold uppercase text-[11px] tracking-wider transition-all"
+                  className="inline-flex items-center justify-center gap-2 w-full py-2.5 px-4 bg-[#C9A24B] hover:bg-[#DFBF73] text-[#0D0D0D] font-bold uppercase text-[11px] tracking-wider transition-all rounded-lg"
                 >
                   <MessageCircle className="w-4 h-4 fill-current" />
                   <span>AGENDAR NO WHATSAPP</span>

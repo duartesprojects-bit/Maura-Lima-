@@ -67,8 +67,8 @@ export default function HomePage() {
                 key={service.id}
                 className="bg-white border border-neutral-200 hover:border-[#C9A24B]/80 transition-all duration-300 shadow-sm hover:shadow-xl rounded-2xl flex flex-col group overflow-hidden"
               >
-                {/* Imagem do Serviço com cantos arredondados */}
-                <div className="relative h-64 w-full overflow-hidden bg-neutral-900">
+                {/* Imagem do Serviço na proporção 1:1 */}
+                <div className="relative aspect-square w-full overflow-hidden bg-neutral-900">
                   <Image
                     src={service.heroImage}
                     alt={service.altImage}
@@ -124,6 +124,53 @@ export default function HomePage() {
                 </div>
               </article>
             ))}
+
+            {/* Card do Curso Profissional Maura Lima */}
+            <article className="bg-gradient-to-br from-[#0D0D0D] to-[#1A1A1A] text-white border border-[#C9A24B]/50 hover:border-[#C9A24B] transition-all duration-300 shadow-lg hover:shadow-2xl rounded-2xl flex flex-col group overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden bg-neutral-900">
+                <Image
+                  src="/curso.jpg"
+                  alt="Cursos Profissionais Maura Lima"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-90"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="px-3.5 py-1 bg-[#C9A24B] text-[#0D0D0D] text-[10px] font-bold uppercase tracking-widest shadow-sm rounded-full">
+                    FORMAÇÃO
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-6 sm:p-8 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="font-heading text-lg font-bold text-[#C9A24B] uppercase tracking-wide mb-3">
+                    Cursos Profissionais Maura Lima
+                  </h3>
+                  <p className="text-sm text-neutral-300 font-light line-clamp-3 leading-relaxed mb-6">
+                    Aprenda o método exclusivo de design de sobrancelhas, visagismo e técnicas avançadas com certificação oficial e alta empregabilidade no mercado da estética.
+                  </p>
+                </div>
+
+                <div className="pt-4 border-t border-neutral-800 space-y-4">
+                  <div className="flex items-center text-xs text-neutral-400">
+                    <Award className="w-3.5 h-3.5 text-[#C9A24B] mr-2 shrink-0" />
+                    <span>Certificado Profissional Incluso</span>
+                  </div>
+
+                  <div className="pt-1">
+                    <Link
+                      href="/cursos"
+                      className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-full bg-[#C9A24B] hover:bg-[#DFBF73] text-[#0D0D0D] font-bold text-xs uppercase tracking-wider transition-all shadow-sm"
+                    >
+                      <span>Saiba Mais Sobre o Curso</span>
+                      <ArrowRight className="w-3.5 h-3.5" />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </article>
 
             {/* Card de Atendimento Personalizado Perolado Arredondado */}
             <div className="pearl-card text-white p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden">
@@ -366,78 +413,89 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 7. LOCALIZAÇÃO COM MAPA INCORPORADO */}
-      <section id="localizacao" className="py-24 bg-[#FAFAFA]">
+      {/* 7. UNIDADES & LOCALIZAÇÃO */}
+      <section id="localizacao" className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-xs font-semibold tracking-[0.25em] text-[#C9A24B] uppercase block mb-3">
-              COMO CHEGAR
+              NOSSAS UNIDADES EM FORTALEZA
             </span>
             <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-[#0D0D0D] uppercase tracking-[0.05em] mb-4">
-              LOCALIZAÇÃO NA ALDEOTA
+              ATENDIMENTO EXCLUSIVO
             </h2>
             <div className="w-16 h-[2px] bg-[#C9A24B] mx-auto mb-6" />
             <p className="text-sm text-neutral-600 font-light">
-              Estamos localizados em uma das vias mais nobres e acessíveis de Fortaleza, com facilidade de parada e segurança.
+              Escolha a unidade de sua preferência (Aldeota ou Maison Sul) e agende seu atendimento ou curso via WhatsApp.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
-            {/* Informações de Contato / Endereço */}
-            <div className="bg-white border border-neutral-200 p-8 flex flex-col justify-between">
-              <div>
-                <h3 className="font-heading text-lg font-bold uppercase tracking-wider text-[#0D0D0D] mb-6 flex items-center gap-2">
-                  <MapPin className="w-5 h-5 text-[#C9A24B]" />
-                  <span>ENDEREÇO COMPLETO</span>
-                </h3>
-
-                <div className="space-y-4 text-sm text-neutral-700 font-light">
-                  <p className="font-medium text-[#0D0D0D] text-base">
-                    {SALON_INFO.name}
-                  </p>
-                  <p>{SALON_INFO.address}</p>
-                  <p className="text-xs text-neutral-500">
-                    Ponto de referência: Próximo à Av. Santos Dumont e Av. Dom Luís, no coração gastronômico e comercial da Aldeota.
-                  </p>
-
-                  <div className="pt-4 border-t border-neutral-100">
-                    <p className="text-xs font-semibold uppercase tracking-wider text-[#0D0D0D] mb-1">
-                      Telefone & WhatsApp:
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+            {SALON_INFO.units.map((unit, idx) => (
+              <div key={idx} className="bg-[#FAFAFA] border border-neutral-200 p-8 rounded-2xl shadow-sm flex flex-col justify-between hover:border-[#C9A24B]/60 transition-all">
+                <div>
+                  <div className="flex items-center justify-between mb-4">
+                    <h3 className="font-heading text-xl font-bold uppercase text-[#0D0D0D]">
+                      {unit.name}
+                    </h3>
+                    <span className="px-3 py-1 bg-white text-[#C9A24B] text-xs font-semibold uppercase rounded-full border border-[#C9A24B]/40 shadow-xs">
+                      Fortaleza - CE
+                    </span>
+                  </div>
+                  <div className="space-y-3 text-sm text-neutral-600 font-light mb-6">
+                    <p className="flex items-start gap-2">
+                      <MapPin className="w-4 h-4 text-[#C9A24B] shrink-0 mt-0.5" />
+                      <span>{unit.address}</span>
                     </p>
-                    <p className="text-base font-bold text-[#C9A24B]">
-                      {SALON_INFO.phoneDisplay}
+                    <p className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-[#C9A24B] shrink-0" />
+                      <span>{unit.hours}</span>
+                    </p>
+                    <p className="flex items-center gap-2 font-medium text-[#0D0D0D] pt-2 border-t border-neutral-200">
+                      <MessageCircle className="w-4 h-4 text-[#C9A24B] shrink-0" />
+                      <span>WhatsApp: {unit.whatsapp} {unit.phone ? `| Fixo: ${unit.phone}` : ''}</span>
                     </p>
                   </div>
                 </div>
-              </div>
 
-              <div className="pt-8">
-                <a
-                  href={SALON_INFO.googleMapsDirectionsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-4 border border-[#0D0D0D] text-[#0D0D0D] hover:bg-[#0D0D0D] hover:text-white font-bold text-xs uppercase tracking-wider transition-all"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                  <span>TRAÇAR ROTA NO GOOGLE MAPS</span>
-                </a>
+                <div className="pt-4 border-t border-neutral-200 flex items-center gap-3">
+                  <a
+                    href={unit.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 inline-flex items-center justify-center gap-2 py-3 px-4 bg-[#C9A24B] hover:bg-[#DFBF73] text-[#0D0D0D] font-bold text-xs uppercase tracking-wider rounded-xl transition-all shadow-sm"
+                  >
+                    <MessageCircle className="w-4 h-4 fill-current" />
+                    <span>Agendar nesta Unidade</span>
+                  </a>
+                  {idx === 0 && (
+                    <a
+                      href={SALON_INFO.googleMapsDirectionsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center p-3 border border-neutral-300 hover:border-[#0D0D0D] rounded-xl text-neutral-700 hover:text-[#0D0D0D] transition-all bg-white"
+                      aria-label="Ver rota no Google Maps"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
+            ))}
+          </div>
 
-            {/* Mapa Google Maps Incorporado */}
-            <div className="lg:col-span-2 h-[420px] lg:h-auto border border-neutral-200 bg-neutral-100 overflow-hidden relative shadow-sm">
-              <iframe
-                title="Mapa do Salão Maura Lima Specialist Eyebrows na Aldeota Fortaleza"
-                src={SALON_INFO.googleMapsEmbedUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: '380px' }}
-                allowFullScreen={false}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="w-full h-full"
-              />
-            </div>
+          {/* Mapa Google Maps Incorporado */}
+          <div className="h-[420px] border border-neutral-200 bg-neutral-100 overflow-hidden relative rounded-2xl shadow-sm">
+            <iframe
+              title="Mapa do Salão Maura Lima Specialist Eyebrows na Aldeota Fortaleza"
+              src={SALON_INFO.googleMapsEmbedUrl}
+              width="100%"
+              height="100%"
+              style={{ border: 0, minHeight: '380px' }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </section>

@@ -27,11 +27,29 @@ export const SALON_INFO = {
   neighborhood: "Aldeota",
   state: "CE",
   address: "R. Monsenhor Catão, 1167 - Aldeota, Fortaleza - CE, 60175-000",
-  phoneDisplay: "(85) 3224-7040",
-  whatsappNumber: "558532247040",
-  whatsappUrl: "https://wa.me/558532247040",
+  landline: "(85) 3224-7040",
+  phoneDisplay: "(85) 98957-8885 | (85) 3224-7040",
+  whatsappNumber: "5585989578885",
+  whatsappUrl: "https://wa.me/5585989578885",
   instagramUrl: "https://instagram.com/mauralimasobrancelhasoficial",
   instagramHandle: "@mauralimasobrancelhasoficial",
+  units: [
+    {
+      name: "Maura Lima Aldeota",
+      address: "R. Monsenhor Catão, 1167 - Aldeota, Fortaleza - CE",
+      phone: "(85) 3224-7040",
+      whatsapp: "(85) 98957-8885",
+      whatsappUrl: "https://wa.me/5585989578885?text=Olá!%20Gostaria%20de%20agendar%20na%20unidade%20Aldeota.",
+      hours: "Seg a Sex: 09:00 às 18:00 | Sáb: 09:00 às 17:10",
+    },
+    {
+      name: "Maura Lima Maison Sul",
+      address: "Av. Edilson Brasil Soares, 1717 - Fortaleza - CE",
+      whatsapp: "(85) 98570-1647",
+      whatsappUrl: "https://wa.me/5585985701647?text=Olá!%20Gostaria%20de%20agendar%20na%20unidade%20Maison%20Sul.",
+      hours: "Ter a Sex: 09:00 às 18:00 | Sáb: 09:00 às 17:00",
+    },
+  ],
   googleMapsEmbedUrl:
     "https://maps.google.com/maps?q=R.+Monsenhor+Cat%C3%A3o,+1167+-+Aldeota,+Fortaleza+-+CE,+60175-000&t=&z=16&ie=UTF8&iwloc=&output=embed",
   googleMapsDirectionsUrl:
@@ -52,6 +70,79 @@ export const SALON_INFO = {
     longitude: -38.49842,
   },
 };
+
+export interface CourseItem {
+  id: string;
+  title: string;
+  subtitle: string;
+  price: string;
+  duration: string;
+  features: string[];
+  modules?: string[];
+  paymentInfo: string;
+  whatsappMessage: string;
+  image?: string;
+}
+
+export const COURSES: CourseItem[] = [
+  {
+    id: "curso-completo-designer",
+    title: "Curso Completo Designer de Sobrancelhas",
+    subtitle: "Formação Completa Maura Lima",
+    price: "3.500,00",
+    duration: "Manhã / Tarde",
+    features: [
+      "Vagas abertas",
+      "Material incluso",
+      "Certificado de conclusão",
+      "Turnos: Manhã / Tarde",
+    ],
+    modules: [
+      "Design de sobrancelhas",
+      "Método de linha",
+      "Micropigmentação",
+      "Advance Lamination",
+    ],
+    paymentInfo: "Investimento: R$ 3.500,00 | 10% OFF em espécie ou pix | Parcelamento em até 3x",
+    whatsappMessage: "Olá! Gostaria de saber mais informações sobre o Curso Completo Designer de Sobrancelhas (R$ 3.500,00).",
+    image: "/images/designdesobramcelha-1.jpg",
+  },
+  {
+    id: "curso-micropigmentacao",
+    title: "Curso Maura Lima Micropigmentação",
+    subtitle: "Especialização Avançada",
+    price: "2.500,00",
+    duration: "5 dias de duração",
+    features: [
+      "Vagas abertas",
+      "Material incluso",
+      "5 dias de duração",
+      "Turnos: Manhã / Tarde",
+      "Certificado de conclusão",
+    ],
+    paymentInfo: "Investimento: R$ 2.500,00 | 10% OFF em espécie ou pix | Parcelamento em até 3x",
+    whatsappMessage: "Olá! Gostaria de saber mais informações sobre o Curso Maura Lima Micropigmentação (R$ 2.500,00).",
+    image: "/images/fio-a-fio.jpg",
+  },
+  {
+    id: "curso-design-sobrancelhas",
+    title: "Curso Maura Lima Design de Sobrancelhas",
+    subtitle: "Fundamentos e Técnicas Exclusivas",
+    price: "1.500,00",
+    duration: "5 dias de duração",
+    features: [
+      "Vagas abertas",
+      "Material incluso",
+      "5 dias de duração",
+      "Turnos: Manhã / Tarde",
+      "Certificado de conclusão",
+    ],
+    paymentInfo: "Investimento: R$ 1.500,00 | 10% OFF em espécie ou pix | Parcelamento em até 3x",
+    whatsappMessage: "Olá! Gostaria de saber mais informações sobre o Curso Maura Lima Design de Sobrancelhas (R$ 1.500,00).",
+    image: "/images/designdesobramcelha-1.jpg",
+  },
+];
+
 
 export const SERVICES: ServiceItem[] = [
   {
@@ -717,9 +808,9 @@ export const HERO_SLIDES = [
     subtitle: "MAURA LIMA – SPECIALIST EYEBROWS",
     description:
       "Realce a sua beleza de forma leve, no seu tempo, com quem entende de sobrancelhas.",
-    ctaText: "FALAR COM MAURA LIMA",
+    ctaText: "AGENDAR PELO WHATSAPP",
     ctaLink:
-      "https://wa.me/558532247040?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Maura%20Lima.",
+      "https://wa.me/5585989578885?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20pelo%20WhatsApp.",
     image:
       "/images/designdesobramcelha-1.jpg",
     video:
@@ -732,9 +823,9 @@ export const HERO_SLIDES = [
     subtitle: "Tecnologia de Ponta para Restauração da Pele",
     description:
       "A inovação mais avançada para remover micropigmentação antiga sem agredir os pelos, atingindo inclusive tons avermelhados e alaranjados.",
-    ctaText: "AGENDAR PELO WHATSAPP",
+    ctaText: "SAIBA MAIS SOBRE A REMOÇÃO A LASER",
     ctaLink:
-      "https://wa.me/558532247040?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Remo%C3%A7%C3%A3o%20a%20Laser%20%C3%96mer%203D.",
+      "/servicos/remocao-a-laser-omer-3d",
     image:
       "/images/remocao-laser.jpg",
     video:
@@ -746,10 +837,10 @@ export const HERO_SLIDES = [
     title: "DESIGN DE SOBRANCELHAS",
     subtitle: "Mapeamento Facial Exclusivo e Sob Medida",
     description:
-      "Simetria milimétrica, valorização da curvatura natural e respeito à anatomia do seu rosto, sem afinar ou perder a leveza da sua expressão.",
-    ctaText: "AGENDAR PELO WHATSAPP",
+      "Simetria milimétrica, valorização da curvatura natural e respeito à anatomia do seu rosto, sem afinar ou perder a leveza da sua expressão. Conheça também nossos cursos profissionais.",
+    ctaText: "SAIBA MAIS SOBRE O CURSO",
     ctaLink:
-      "https://wa.me/558532247040?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20meu%20Design%20de%20Sobrancelhas%20na%20Maura%20Lima.",
+      "/cursos",
     image:
       "/images/designdesobramcelha-1.jpg",
     video:
@@ -758,18 +849,18 @@ export const HERO_SLIDES = [
   },
   {
     id: 4,
-    title: "CÍLIOS, CABELO & MAQUIAGEM",
-    subtitle: "Cuidado Completo para a Sua Beleza na Aldeota",
+    title: "MAURA LIMA MAISON SUL",
+    subtitle: "Atendimento Exclusivo na Av. Edilson Brasil Soares",
     description:
-      "Extensão Volume Brasileiro com fios Y, morena iluminada com brilho espelhado e maquiagem duradoura resistente ao calor de Fortaleza.",
-    ctaText: "AGENDAR PELO WHATSAPP",
+      "Extensão Volume Brasileiro com fios Y, morena iluminada com brilho espelhado e maquiagem duradoura em nossa nova unidade na Maison Sul.",
+    ctaText: "AGENDAR NA MAURA LIMA MAISON SUL",
     ctaLink:
-      "https://wa.me/558532247040?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20C%C3%ADlios%2C%20Cabelo%20ou%20Maquiagem%20na%20Maura%20Lima.",
+      "https://wa.me/5585985701647?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20na%20Maura%20Lima%20Maison%20Sul.",
     image:
       "/images/cabelo.jpg",
     video:
       "/videos/cabelo.mp4",
-    alt: "Produção de cabelo, beleza e estética na Maura Lima Aldeota",
+    alt: "Produção de cabelo, beleza e estética na Maura Lima Maison Sul",
   },
 ];
 

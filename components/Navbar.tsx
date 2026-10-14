@@ -148,6 +148,13 @@ export default function Navbar() {
             </div>
 
             <Link
+              href="/cursos"
+              className="text-[#0D0D0D] hover:text-[#C9A24B] transition-colors py-1 font-bold text-[#C9A24B]"
+            >
+              CURSOS
+            </Link>
+
+            <Link
               href="/#sobre"
               className="text-[#0D0D0D] hover:text-[#C9A24B] transition-colors py-1"
             >
@@ -172,7 +179,7 @@ export default function Navbar() {
               href="/#localizacao"
               className="text-[#0D0D0D] hover:text-[#C9A24B] transition-colors py-1"
             >
-              LOCALIZAÇÃO
+              UNIDADES
             </Link>
           </nav>
 
@@ -250,6 +257,13 @@ export default function Navbar() {
               </div>
 
               <Link
+                href="/cursos"
+                onClick={closeMenus}
+                className="py-2 border-b border-neutral-100 hover:text-[#C9A24B] text-[#C9A24B] font-bold"
+              >
+                Cursos Maura Lima
+              </Link>
+              <Link
                 href="/#sobre"
                 onClick={closeMenus}
                 className="py-2 border-b border-neutral-100 hover:text-[#C9A24B]"
@@ -275,7 +289,7 @@ export default function Navbar() {
                 onClick={closeMenus}
                 className="py-2 border-b border-neutral-100 hover:text-[#C9A24B]"
               >
-                Localização (Aldeota)
+                Unidades (Aldeota e Maison Sul)
               </Link>
             </div>
 
