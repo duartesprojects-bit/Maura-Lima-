@@ -1,0 +1,323 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-gold: #C9A24B;
+    --color-gold-light: #DFBF73;
+    --color-gold-soft: #F9F5EC;
+    --color-dark: #0D0D0D;
+    --color-dark-subtle: #1A1A1A;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: #262626;
+    background-color: #FFFFFF;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Custom subtle gold selection */
+  ::selection {
+    background-color: #C9A24B;
+    color: #0D0D0D;
+  }
+}
+
+.font-heading {
+  font-family: var(--font-montserrat), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.font-body {
+  font-family: var(--font-cormorant), "Times New Roman", Times, serif;
+}
+
+/* Subtle luxury gold gradient borders and text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #DFBF73 0%, #C9A24B 50%, #A6802C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #DFBF73 0%, #C9A24B 100%);
+}
+
+.gold-border-subtle {
+  border-color: rgba(201, 162, 75, 0.25);
+}
+
+.gold-border-hover:hover {
+  border-color: rgba(201, 162, 75, 0.6);
+}
+
+/* Pearl Effect Buttons & Elements (From Uiverse.io by marcelodolza) */
+.pearl-button {
+  --white: #ffe7ff;
+  --bg: #0d0d0d;
+  --radius: 9999px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  border-radius: var(--radius);
+  background-color: var(--bg);
+  transition: all 0.25s ease;
+  text-decoration: none;
+  display: inline-flex;
+  box-shadow:
+    inset 0 0.3rem 0.9rem rgba(255, 255, 255, 0.3),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.4),
+    0 2rem 2.5rem rgba(0, 0, 0, 0.35),
+    0 0.75rem 1rem -0.5rem rgba(0, 0, 0, 0.8);
+}
+
+.pearl-button .pearl-btn-wrap {
+  border-radius: inherit;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pearl-button .pearl-btn-wrap::before,
+.pearl-button .pearl-btn-wrap::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.pearl-button .pearl-btn-wrap::before {
+  left: -15%;
+  right: -15%;
+  bottom: 25%;
+  top: -100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+.pearl-button .pearl-btn-wrap::after {
+  left: 6%;
+  right: 6%;
+  top: 10%;
+  bottom: 40%;
+  border-radius: 9999px;
+  box-shadow: inset 0 10px 8px -10px rgba(255, 255, 255, 0.85);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.35) 0%,
+    rgba(0, 0, 0, 0.05) 50%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+}
+
+.pearl-button:hover {
+  transform: translateY(-2px);
+  border-color: rgba(201, 162, 75, 0.6);
+  box-shadow:
+    inset 0 0.35rem 0.6rem rgba(255, 255, 255, 0.45),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.7),
+    inset 0 -0.4rem 0.9rem rgba(201, 162, 75, 0.6),
+    0 2.5rem 3rem rgba(0, 0, 0, 0.45),
+    0 1rem 1.2rem -0.5rem rgba(0, 0, 0, 0.9);
+}
+
+.pearl-button:hover .pearl-btn-wrap::before {
+  transform: translateY(-5%);
+}
+
+.pearl-button:hover .pearl-btn-wrap::after {
+  opacity: 0.6;
+  transform: translateY(3%);
+}
+
+.pearl-button:active {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 0.3rem 0.5rem rgba(255, 255, 255, 0.5),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.8),
+    inset 0 -0.4rem 0.9rem rgba(255, 255, 255, 0.4),
+    0 1.5rem 1.5rem rgba(0, 0, 0, 0.3);
+}
+
+/* Pearl Gold Variant */
+.pearl-button-gold {
+  --bg: #1A160E;
+  border-color: rgba(201, 162, 75, 0.5);
+  box-shadow:
+    inset 0 0.35rem 0.9rem rgba(223, 191, 115, 0.4),
+    inset 0 -0.1rem 0.3rem rgba(0, 0, 0, 0.8),
+    inset 0 -0.4rem 0.9rem rgba(201, 162, 75, 0.6),
+    0 2rem 2.5rem rgba(0, 0, 0, 0.35),
+    0 0.75rem 1rem -0.5rem rgba(0, 0, 0, 0.8);
+}
+
+/* Pearl Rounded Card / Container */
+.pearl-card {
+  border-radius: 28px;
+  background-color: #0D0D0D;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    inset 0 0.3rem 0.8rem rgba(255, 255, 255, 0.16),
+    inset 0 -0.2rem 0.4rem rgba(0, 0, 0, 0.9),
+    0 1.5rem 3rem rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.pearl-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* Pearl Button Glass (Leve, Semitransparente & Discreto para o Hero) */
+.pearl-button-glass {
+  --radius: 9999px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  position: relative;
+  border-radius: var(--radius);
+  background: rgba(13, 13, 13, 0.42);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.4),
+    0 8px 24px -4px rgba(0, 0, 0, 0.45);
+}
+
+.pearl-button-glass .pearl-btn-wrap {
+  border-radius: inherit;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pearl-button-glass .pearl-btn-wrap::before {
+  content: "";
+  position: absolute;
+  left: -10%;
+  right: -10%;
+  top: -80%;
+  bottom: 25%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.pearl-button-glass:hover {
+  transform: translateY(-2px);
+  background: rgba(13, 13, 13, 0.65);
+  border-color: rgba(201, 162, 75, 0.85);
+  box-shadow:
+    inset 0 1px 3px rgba(255, 255, 255, 0.6),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.5),
+    0 12px 28px -4px rgba(201, 162, 75, 0.35);
+}
+
+.pearl-button-glass:hover .pearl-btn-wrap::before {
+  transform: translateY(4%);
+  background: radial-gradient(circle, rgba(201, 162, 75, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.pearl-button-glass:active {
+  transform: translateY(1px);
+}
+
+/* Pearl Button White (Fundo Branco Pérola com Efeito Perolado Arredondado) */
+.pearl-button-white {
+  --radius: 9999px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  position: relative;
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FAF8F5 55%, #F4EFE6 100%);
+  transition: all 0.25s ease;
+  text-decoration: none;
+  display: inline-flex;
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 1),
+    inset 0 -2px 5px rgba(201, 162, 75, 0.22),
+    0 12px 28px -6px rgba(0, 0, 0, 0.45),
+    0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.pearl-button-white .pearl-btn-wrap {
+  border-radius: inherit;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.pearl-button-white .pearl-btn-wrap::before,
+.pearl-button-white .pearl-btn-wrap::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.pearl-button-white .pearl-btn-wrap::before {
+  left: -15%;
+  right: -15%;
+  bottom: 25%;
+  top: -100%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.pearl-button-white .pearl-btn-wrap::after {
+  left: 6%;
+  right: 6%;
+  top: 8%;
+  bottom: 42%;
+  border-radius: 9999px;
+  box-shadow: inset 0 8px 6px -6px rgba(255, 255, 255, 1);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(240, 230, 215, 0.2) 100%
+  );
+}
+
+.pearl-button-white:hover {
+  transform: translateY(-2px);
+  border-color: rgba(201, 162, 75, 0.65);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFDF9 45%, #F7EFE1 100%);
+  box-shadow:
+    inset 0 1px 3px rgba(255, 255, 255, 1),
+    inset 0 -2px 6px rgba(201, 162, 75, 0.35),
+    0 16px 36px -6px rgba(0, 0, 0, 0.5),
+    0 0 24px rgba(201, 162, 75, 0.28);
+}
+
+.pearl-button-white:hover .pearl-btn-wrap::before {
+  transform: translateY(-4%);
+}
+
+.pearl-button-white:hover .pearl-btn-wrap::after {
+  opacity: 0.85;
+  transform: translateY(2%);
+}
+
+.pearl-button-white:active {
+  transform: translateY(2px);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 255, 255, 0.8),
+    inset 0 -1px 3px rgba(201, 162, 75, 0.3),
+    0 8px 16px rgba(0, 0, 0, 0.3);
+}
