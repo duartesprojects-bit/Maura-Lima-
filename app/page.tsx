@@ -214,7 +214,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Visual Mosaic / Image */}
             <div className="relative">
-              <div className="relative h-[480px] sm:h-[540px] w-full border border-neutral-200 rounded-2xl overflow-hidden shadow-md">
+              <div className="relative aspect-square w-full border border-neutral-200 rounded-2xl overflow-hidden shadow-md">
                 <Image
                   src="/images/Improve_lighting_2K_20261013151319.jpg"
                   alt="Espaço sofisticado e acolhedor do salão Maura Lima em Fortaleza"

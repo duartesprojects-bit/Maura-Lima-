@@ -68,16 +68,24 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-          {/* Brand Logo - 100% legible on white */}
-          <Link href="/" className="group flex items-center py-1">
+          {/* Brand Logo & Tagline - 100% legible on white */}
+          <Link href="/" className="group flex items-center gap-3 py-1">
             <Image
               src="/MauraLimaLogo.png"
               alt="Maura Lima – Specialist Eyebrows Fortaleza"
-              width={180}
-              height={50}
-              className="h-10 sm:h-12 w-auto object-contain group-hover:opacity-85 transition-opacity"
+              width={220}
+              height={70}
+              className="h-14 sm:h-16 md:h-20 w-auto object-contain group-hover:opacity-85 transition-opacity"
               priority
             />
+            <div className="hidden sm:flex flex-col border-l border-[#C9A24B]/40 pl-3">
+              <span className="text-[11px] md:text-[12px] font-bold uppercase tracking-[0.2em] text-[#C9A24B] leading-tight">
+                Especialista Em
+              </span>
+              <span className="text-[11px] md:text-[12px] font-semibold uppercase tracking-[0.15em] text-[#0D0D0D] leading-tight">
+                Sobrancelhas
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

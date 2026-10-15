@@ -156,7 +156,7 @@ export const SERVICES: ServiceItem[] = [
     shortSummary:
       "A tecnologia do Laser Ömer 3D conta com 3 ponteiras exclusivas: a 532nm (para pigmentos avermelhados e alaranjados), a 1064nm (para pigmentos pretos e escuros) e a ponteira de carbono (para pigmentos profundos e Black Peeling). Essa precisão seletiva remove micropigmentações antigas sem danificar a raiz dos pelos nem a pele.",
     heroImage:
-      "/images/remocao-laser.jpg",
+      "/omer.jpg",
     altImage:
       "Procedimento de remoção a laser de micropigmentação na Maura Lima Aldeota Fortaleza",
     indicatedFor: [
