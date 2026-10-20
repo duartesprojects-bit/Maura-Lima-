@@ -20,8 +20,8 @@ export interface ServiceItem {
 }
 
 export const SALON_INFO = {
-  name: "Maura Lima – Specialist Eyebrows",
-  tagline: "Specialist Eyebrows & Estética Facial de Alto Padrão",
+  name: "Maura Lima – Especialista em Sobrancelhas",
+  tagline: "Especialista em Sobrancelhas & Estética Facial de Alto Padrão",
   logo: "/LogoPreta (2).png",
   city: "Fortaleza",
   neighborhood: "Aldeota",

@@ -128,24 +128,24 @@ export default function Navbar() {
               </button>
 
               {servicesDropdownOpen && (
-                <div className="absolute top-full left-0 w-72 pt-3">
-                  <div className="bg-white/95 backdrop-blur-md border border-[#C9A24B]/40 shadow-2xl py-2 px-1 rounded-2xl">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 w-[520px] pt-3 z-50">
+                  <div className="bg-white/95 backdrop-blur-md border border-[#C9A24B]/40 shadow-2xl p-3 rounded-2xl grid grid-cols-2 gap-1.5">
                     {SERVICES.map((s) => (
                       <Link
                         key={s.id}
                         href={`/servicos/${s.slug}`}
-                        className="block px-4 py-2.5 text-[11px] text-neutral-700 hover:text-[#0D0D0D] hover:bg-[#F9F5EC] hover:border-l-2 hover:border-[#C9A24B] transition-all normal-case tracking-normal rounded-lg"
+                        className="block px-3.5 py-2.5 text-xs text-neutral-700 hover:text-[#0D0D0D] hover:bg-[#F9F5EC] hover:border-l-2 hover:border-[#C9A24B] transition-all normal-case tracking-normal rounded-xl border border-transparent"
                       >
-                        <div className="font-semibold text-[#0D0D0D]">{s.name}</div>
-                        <div className="text-[10px] text-neutral-500 truncate">
+                        <div className="font-semibold text-[#0D0D0D] leading-tight">{s.name}</div>
+                        <div className="text-[10px] text-neutral-500 truncate mt-0.5">
                           {s.duration}
                         </div>
                       </Link>
                     ))}
-                    <div className="border-t border-neutral-150 mt-2 pt-2 px-4 pb-1">
+                    <div className="col-span-2 border-t border-neutral-100 mt-1 pt-2 px-3 pb-1 text-center">
                       <Link
                         href="/#servicos"
-                        className="text-[10px] text-[#C9A24B] hover:underline uppercase tracking-wider font-semibold block"
+                        className="text-[11px] text-[#C9A24B] hover:underline uppercase tracking-wider font-bold block"
                       >
                         Ver todos os serviços &rarr;
                       </Link>

@@ -24,16 +24,16 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL('https://mauralima.com.br'),
   title: {
-    default: 'Maura Lima – Specialist Eyebrows | Salão e Cursos em Fortaleza (Aldeota e Maison Sul)',
+    default: 'Maura Lima – Especialista em Sobrancelhas | Salão e Cursos em Fortaleza (Aldeota e Maison Sul)',
     template: '%s | Maura Lima Fortaleza',
   },
   description:
-    'Especialista em Design de Sobrancelhas, Remoção a Laser Ömer 3D, Cílios Volume Brasileiro, Cabelo, Maquiagem e Cursos Profissionais de Estética na Aldeota e Maison Sul em Fortaleza. Agende pelo WhatsApp.',
+    'Especialista em Design de Sobrancelhas, Depigmentação, Cílios Volume Brasileiro, Cabelo, Maquiagem e Cursos Profissionais de Estética na Aldeota e Maison Sul em Fortaleza. Agende pelo WhatsApp.',
   keywords: [
     'sobrancelhas fortaleza',
     'maura lima fortaleza',
     'design de sobrancelhas aldeota',
-    'remocao a laser omer 3d',
+    'depigmentacao',
     'extensao de cilios fortaleza',
     'salao aldeota fortaleza',
     'maquiagem profissional fortaleza',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Maura Lima Fortaleza' }],
   creator: 'Maura Lima',
-  publisher: 'Maura Lima – Specialist Eyebrows',
+  publisher: 'Maura Lima – Especialista em Sobrancelhas',
   formatDetection: {
     telephone: true,
     address: true,
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     url: 'https://mauralima.com.br',
-    siteName: 'Maura Lima – Specialist Eyebrows Fortaleza',
-    title: 'Maura Lima – Specialist Eyebrows | Salão e Cursos em Fortaleza (Aldeota e Maison Sul)',
+    siteName: 'Maura Lima – Especialista em Sobrancelhas Fortaleza',
+    title: 'Maura Lima – Especialista em Sobrancelhas | Salão e Cursos em Fortaleza (Aldeota e Maison Sul)',
     description:
       'Referência em design de sobrancelhas, depigmentação, estética facial e cursos profissionais em Fortaleza.',
     images: [
@@ -66,13 +66,13 @@ export const metadata: Metadata = {
         url: '/LogoPreta (2).png',
         width: 1200,
         height: 630,
-        alt: 'Maura Lima Specialist Eyebrows Fortaleza',
+        alt: 'Maura Lima Especialista em Sobrancelhas Fortaleza',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Maura Lima – Specialist Eyebrows Fortaleza',
+    title: 'Maura Lima – Especialista em Sobrancelhas Fortaleza',
     description:
       'Design de sobrancelhas, depigmentação, cílios, maquiagem e cursos na Aldeota e Maison Sul.',
     images: ['/LogoPreta (2).png'],
