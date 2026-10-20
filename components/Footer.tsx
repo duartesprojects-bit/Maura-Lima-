@@ -12,14 +12,14 @@ export default function Footer() {
           <div className="space-y-4">
             <Link
               href="/"
-              className="inline-block bg-white px-3.5 py-2 border border-[#C9A24B]/40 hover:border-[#C9A24B] transition-all shadow-md group"
+              className="inline-block group py-1"
             >
               <Image
-                src="/images/logo.png"
+                src="/logoBranca (2).png"
                 alt="Maura Lima – Specialist Eyebrows Fortaleza"
-                width={180}
-                height={50}
-                className="h-9 sm:h-10 w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={260}
+                height={90}
+                className="h-16 sm:h-20 md:h-24 w-auto object-contain group-hover:opacity-90 transition-opacity"
               />
             </Link>
             <p className="text-sm text-neutral-400 font-light leading-relaxed">

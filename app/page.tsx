@@ -14,6 +14,7 @@ import {
   Award,
 } from 'lucide-react';
 import HeroCarousel from '@/components/HeroCarousel';
+import SalonGalleryCarousel from '@/components/SalonGalleryCarousel';
 import { SALON_INFO, SERVICES, REVIEWS } from '@/lib/salon-data';
 
 export default function HomePage() {
@@ -26,9 +27,7 @@ export default function HomePage() {
       <section className="py-20 lg:py-24 bg-white border-b border-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-xs font-semibold tracking-[0.25em] text-[#C9A24B] uppercase block mb-3">
-              ESTÉTICA DO OLHAR & HARMONIA FACIAL NA ALDEOTA
-            </span>
+
             <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-[#0D0D0D] tracking-[0.05em] uppercase mb-6 leading-tight">
               A ARTE DE REALÇAR A SUA BELEZA COM NATURALIDADE
             </h2>
@@ -208,86 +207,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. SOBRE O SALÃO & MÉTODO MAURA LIMA */}
-      <section id="sobre" className="py-24 bg-white border-b border-neutral-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            {/* Visual Mosaic / Image */}
-            <div className="relative">
-              <div className="relative aspect-square w-full border border-neutral-200 rounded-2xl overflow-hidden shadow-md">
-                <Image
-                  src="/images/Improve_lighting_2K_20261013151319.jpg"
-                  alt="Espaço sofisticado e acolhedor do salão Maura Lima em Fortaleza"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  referrerPolicy="no-referrer"
-                  priority
-                />
-              </div>
-
-              {/* Float badge in gold/dark */}
-              <div className="absolute -bottom-6 -right-6 sm:bottom-6 sm:right-6 bg-[#0D0D0D] text-white p-6 border border-[#C9A24B]/50 shadow-2xl max-w-xs">
-                <span className="text-2xl font-bold font-heading text-[#C9A24B] block">
-                  ALDEOTA
-                </span>
-                <span className="text-xs uppercase tracking-wider text-neutral-300 font-light block mt-1">
-                  Atendimento de alta exclusividade no bairro mais nobre de Fortaleza
-                </span>
-              </div>
-            </div>
-
-            {/* Texto Sobre */}
-            <div className="space-y-6">
-              <div>
-                <span className="text-xs font-semibold tracking-[0.25em] text-[#C9A24B] uppercase block mb-2">
-                  TRADIÇÃO E INOVAÇÃO EM FORTALEZA
-                </span>
-                <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-[#0D0D0D] uppercase tracking-[0.05em] leading-tight">
-                  ESPECIALISTAS EM REALÇAR A SUA EXPRESSÃO
-                </h2>
-              </div>
-
-              <div className="w-16 h-[2px] bg-[#C9A24B]" />
-
-              <p className="text-base text-neutral-700 font-light leading-relaxed">
-                A marca <strong className="font-medium text-[#0D0D0D]">Maura Lima – Specialist Eyebrows</strong> construiu uma reputação de referência no Brasil ao tratar o design de sobrancelhas não como um procedimento rotineiro, mas como uma arte de personalização extrema.
-              </p>
-
-              <p className="text-base text-neutral-700 font-light leading-relaxed">
-                Na nossa unidade em Fortaleza, situada na Rua Monsenhor Catão, combinamos esse legado de visagismo com as mais modernas tecnologias mundiais, como a <strong className="font-medium text-[#0D0D0D]">Remoção a Laser Ömer 3D</strong>, a delicadeza dos cílios em <strong className="font-medium text-[#0D0D0D]">Volume Brasileiro</strong> e uma equipe completa de coloração capilar e maquiagem de alta durabilidade.
-              </p>
-
-              <div className="space-y-3 pt-2">
-                <div className="flex items-center gap-3 text-sm text-neutral-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#C9A24B] shrink-0" />
-                  <span>Ambiente silencioso, relaxante e com total privacidade.</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm text-neutral-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#C9A24B] shrink-0" />
-                  <span>Protocolos rigorosos de assepsia e equipamentos certificados.</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm text-neutral-800">
-                  <CheckCircle2 className="w-5 h-5 text-[#C9A24B] shrink-0" />
-                  <span>Estacionamento e fácil mobilidade no polo da Aldeota.</span>
-                </div>
-              </div>
-
-              <div className="pt-4">
-                <a
-                  href={SALON_INFO.whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-8 py-4 bg-[#0D0D0D] hover:bg-[#1A1A1A] text-white hover:text-[#C9A24B] font-bold text-xs uppercase tracking-[0.15em] transition-all border border-[#C9A24B]/40"
-                >
-                  <MessageCircle className="w-4 h-4 text-[#C9A24B]" />
-                  <span>CONHECER DE PERTO • AGENDAR VISITA</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* CARROSSEL CONHEÇA NOSSO SALÃO */}
+      <SalonGalleryCarousel />
 
       {/* 5. AVALIAÇÕES DE CLIENTES */}
       <section id="avaliacoes" className="py-24 bg-[#0D0D0D] text-white">
@@ -497,6 +418,90 @@ export default function HomePage() {
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* CARROSSEL CONHEÇA NOSSO SALÃO */}
+      <SalonGalleryCarousel />
+
+      {/* 4. SOBRE O SALÃO & MÉTODO MAURA LIMA */}
+      <section id="sobre" className="py-24 bg-white border-b border-neutral-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Visual Mosaic / Image */}
+            <div className="relative">
+              <div className="relative aspect-square w-full border border-neutral-200 rounded-2xl overflow-hidden shadow-md">
+                <Image
+                  src="/images/Improve_lighting_2K_20261013151319.jpg"
+                  alt="Espaço sofisticado e acolhedor do salão Maura Lima em Fortaleza"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  referrerPolicy="no-referrer"
+                  priority
+                />
+              </div>
+
+              {/* Float badge in gold/dark */}
+              <div className="absolute -bottom-6 -right-6 sm:bottom-6 sm:right-6 bg-[#0D0D0D] text-white p-6 border border-[#C9A24B]/50 shadow-2xl max-w-xs">
+                <span className="text-2xl font-bold font-heading text-[#C9A24B] block">
+                  ALDEOTA
+                </span>
+                <span className="text-xs uppercase tracking-wider text-neutral-300 font-light block mt-1">
+                  Atendimento de alta exclusividade no bairro mais nobre de Fortaleza
+                </span>
+              </div>
+            </div>
+
+            {/* Texto Sobre */}
+            <div className="space-y-6">
+              <div>
+                <span className="text-xs font-semibold tracking-[0.25em] text-[#C9A24B] uppercase block mb-2">
+                  TRADIÇÃO E INOVAÇÃO EM FORTALEZA
+                </span>
+                <h2 className="font-heading text-3xl sm:text-4xl font-extrabold text-[#0D0D0D] uppercase tracking-[0.05em] leading-tight">
+                  ESPECIALISTAS EM REALÇAR A SUA EXPRESSÃO
+                </h2>
+              </div>
+
+              <div className="w-16 h-[2px] bg-[#C9A24B]" />
+
+              <p className="text-base text-neutral-700 font-light leading-relaxed">
+                A marca <strong className="font-medium text-[#0D0D0D]">Maura Lima – Specialist Eyebrows</strong> construiu uma reputação de referência no Brasil ao tratar o design de sobrancelhas não como um procedimento rotineiro, mas como uma arte de personalização extrema.
+              </p>
+
+              <p className="text-base text-neutral-700 font-light leading-relaxed">
+                Na nossa unidade em Fortaleza, situada na Rua Monsenhor Catão, combinamos esse legado de visagismo com as mais modernas tecnologias mundiais, como a <strong className="font-medium text-[#0D0D0D]">Depigmentação</strong>, a delicadeza dos cílios em <strong className="font-medium text-[#0D0D0D]">Volume Brasileiro</strong> e uma equipe completa de coloração capilar e maquiagem de alta durabilidade.
+              </p>
+
+              <div className="space-y-3 pt-2">
+                <div className="flex items-center gap-3 text-sm text-neutral-800">
+                  <CheckCircle2 className="w-5 h-5 text-[#C9A24B] shrink-0" />
+                  <span>Ambiente silencioso, relaxante e com total privacidade.</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-neutral-800">
+                  <CheckCircle2 className="w-5 h-5 text-[#C9A24B] shrink-0" />
+                  <span>Protocolos rigorosos de assepsia e equipamentos certificados.</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm text-neutral-800">
+                  <CheckCircle2 className="w-5 h-5 text-[#C9A24B] shrink-0" />
+                  <span>Estacionamento e fácil mobilidade no polo da Aldeota.</span>
+                </div>
+              </div>
+
+              <div className="pt-4">
+                <a
+                  href={SALON_INFO.whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 px-8 py-4 bg-[#0D0D0D] hover:bg-[#1A1A1A] text-white hover:text-[#C9A24B] font-bold text-xs uppercase tracking-[0.15em] transition-all border border-[#C9A24B]/40"
+                >
+                  <MessageCircle className="w-4 h-4 text-[#C9A24B]" />
+                  <span>CONHECER DE PERTO • AGENDAR VISITA</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

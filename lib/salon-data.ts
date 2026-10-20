@@ -22,7 +22,7 @@ export interface ServiceItem {
 export const SALON_INFO = {
   name: "Maura Lima – Specialist Eyebrows",
   tagline: "Specialist Eyebrows & Estética Facial de Alto Padrão",
-  logo: "/MauraLimaLogo.png",
+  logo: "/LogoPreta (2).png",
   city: "Fortaleza",
   neighborhood: "Aldeota",
   state: "CE",
@@ -149,99 +149,79 @@ export const COURSES: CourseItem[] = [
 
 export const SERVICES: ServiceItem[] = [
   {
-    id: "remocao-a-laser-omer-3d",
-    slug: "remocao-a-laser-omer-3d",
-    name: "Remoção a Laser Ömer 3D",
-    titleH1: "Remoção a Laser Ömer 3D em Fortaleza",
+    id: "depigmentacao",
+    slug: "depigmentacao",
+    name: "Depigmentação",
+    titleH1: "Depigmentação em Fortaleza",
     shortSummary:
-      "A tecnologia do Laser Ömer 3D conta com 3 ponteiras exclusivas: a 532nm (para pigmentos avermelhados e alaranjados), a 1064nm (para pigmentos pretos e escuros) e a ponteira de carbono (para pigmentos profundos e Black Peeling). Essa precisão seletiva remove micropigmentações antigas sem danificar a raiz dos pelos nem a pele.",
+      "Método especializado em clareamento e remoção gradual de pigmentos indesejados de micropigmentações antigas. Procedimento seguro realizado com ativos e tecnologias que respeitam a integridade da pele e preservam a saúde dos pelos naturais na Aldeota.",
     heroImage:
       "/omer.jpg",
     altImage:
-      "Procedimento de remoção a laser de micropigmentação na Maura Lima Aldeota Fortaleza",
+      "Procedimento de depigmentação de sobrancelhas na Maura Lima Aldeota Fortaleza",
     indicatedFor: [
-      "Pessoas com micropigmentação antiga ou desbotada em tons indesejados (acinzentado, avermelhado ou alaranjado).",
+      "Pessoas com micropigmentação antiga, esverdeada, azulada ou avermelhada.",
       "Quem deseja clarear o pigmento para refazer um novo design de sobrancelhas harmônico e natural.",
-      "Correção de assimetrias graves ou designs artificiais feitos anteriormente em outros estabelecimentos.",
-      "Quem busca um procedimento seguro com tecnologia de ponta que não danifique a raiz dos fios naturais.",
+      "Correção de assimetrias ou saturação excessiva de pigmento.",
+      "Quem busca um procedimento seguro com acompanhamento profissional especializado.",
     ],
     stepByStep: [
       {
         step: 1,
-        title: "Avaliação Personalizada e Teste de Cor",
+        title: "Avaliação Detalhada e Teste",
         description:
-          "Análise detalhada da profundidade, do tipo de pigmento residual e fototipo da pele na unidade Aldeota.",
+          "Análise do tipo de pele, saturação e histórico da micropigmentação antiga na unidade Aldeota.",
       },
       {
         step: 2,
-        title: "Higienização e Proteção Ocular",
+        title: "Assepsia e Preparação da Região",
         description:
-          "Aplicação de protetor ocular especial e antisséptico suave, garantindo conforto e segurança médica.",
+          "Higienização rigorosa e aplicação de produtos específicos para otimizar o processo de depigmentação.",
       },
       {
         step: 3,
-        title: "Aplicação dos Disparos do Laser Ömer 3D",
+        title: "Aplicação do Protocolo de Depigmentação",
         description:
-          "O feixe de luz ultra-rápido fragmenta as moléculas de tinta em micropartículas que o sistema linfático elimina de forma gradual.",
+          "Aplicação técnica controlada para neutralizar e extrair o pigmento residual de forma gradual.",
       },
       {
         step: 4,
-        title: "Calmante Cutâneo e Orientações Pós-Sessão",
+        title: "Cuidados Pós-Procedimento e Regeneração",
         description:
-          "Aplicação de loção regeneradora calmante e entrega do guia completo de cuidados para os próximos dias.",
+          "Orientação de cuidados em casa e uso de regeneradores cutâneos para recuperação perfeita.",
       },
     ],
-    duration: "Aproximadamente 40 a 60 minutos por sessão (incluindo avaliação e assepsia).",
+    duration: "Aproximadamente 45 a 60 minutos por sessão.",
     expectedResults:
-      "Clareamento progressivo visível já a partir das primeiras semanas após a sessão. Não fazemos promessas de remoção total em sessão única, pois o número exato de sessões varia conforme a tinta e profundidade da micropigmentação antiga.",
+      "Clareamento progressivo e remoção segura do pigmento indesejado, preparando a pele para um novo design impecável.",
     preCare: [
-      "Evitar exposição solar intensa e bronzeamento na área das sobrancelhas nos 15 dias anteriores.",
-      "Suspender o uso de ácidos e peelings agressivos na região por 7 a 10 dias antes.",
-      "Comparecer com a pele limpa, sem protetor solar com cor ou maquiagem pesada nas sobrancelhas.",
+      "Evitar exposição solar intensa na área dos olhos nos dias anteriores.",
+      "Suspender ácidos e peelings na região por 7 dias antes.",
     ],
     postCare: [
-      "Não arrancar eventuais casquinhas que possam se formar no processo natural de cicatrização.",
-      "Evitar banhos muito quentes, saunas, piscina e praia nos primeiros 5 a 7 dias.",
-      "Aplicar pomada regeneradora cicatrizante recomendada pela especialista.",
-      "Usar filtro solar rigoroso após o fechamento da pele para prevenir manchas.",
+      "Evitar arrancar casquinhas e manter a região hidratada com o regenerador indicado.",
+      "Evitar sol direto e uso de maquiagem pesada nos primeiros dias.",
     ],
     contraindications: [
-      "Gestantes e lactantes sem autorização médica expressa.",
-      "Lesões ativas, infecções cutâneas ou herpes ativa na região a ser tratada.",
-      "Uso oral recente de isotretinoína (Roacutan) nos últimos 6 meses.",
-      "Histórico de queloides severos não controlados na área facial.",
+      "Gestantes e lactantes sem liberação médica.",
+      "Infecções cutâneas ativas na região tratada.",
     ],
     whenToSeekEvaluation:
-      "Agende uma avaliação inicial caso note que sua micropigmentação antiga mudou de tom, ficou azulada, avermelhada ou se você deseja restaurar o formato original dos seus pelos naturais na Aldeota.",
+      "Agende uma avaliação se sua micropigmentação mudou de cor ou se deseja restaurar a leveza do seu olhar.",
     faqs: [
       {
-        question: "A remoção a laser Ömer 3D queima ou faz cair os pelos da sobrancelha?",
+        question: "A depigmentação danifica os pelos naturais?",
         answer:
-          "Não. O laser Ömer 3D opera com comprimento de onda seletivo para a tinta. Os pelos podem ficar temporariamente esbranquiçados pelo calor pontual da sessão, mas continuam saudáveis e voltam à sua coloração natural.",
+          "Não. Nosso protocolo é focado em preservar a integridade e o crescimento saudável dos seus pelos.",
       },
       {
-        question: "Quantas sessões são necessárias para remover totalmente a micropigmentação?",
+        question: "Quantas sessões são necessárias?",
         answer:
-          "O número exato de sessões depende da quantidade de pigmento acumulado, tipo de tinta utilizada e tempo da aplicação anterior. Em média varia entre 2 a 6 sessões, com intervalo mínimo de 30 a 45 dias entre elas.",
-      },
-      {
-        question: "O procedimento de remoção com laser dói?",
-        answer:
-          "A sensação é comparada a leves estalinhos ou pinçamentos rápidos na pele. O laser Ömer 3D conta com disparos ultrarrápidos que minimizam o desconforto, tornando o processo rápido e suportável.",
-      },
-      {
-        question: "Depois de remover a micropigmentação, posso fazer um novo design na Maura Lima?",
-        answer:
-          "Sim! Esse é um dos principais objetivos de nossas clientes em Fortaleza. Após a completa regeneração da pele e clareamento satisfatório, nossa equipe elabora um novo design respeitando a anatomia natural do seu rosto.",
-      },
-      {
-        question: "Tirando dúvidas sobre pigmentação: sobrancelhas vermelhas e laranjas têm solução?",
-        answer:
-          "Sim, têm solução definitiva! O grande diferencial do Laser Ömer 3D na Maura Lima Aldeota é a ponteira de 532nm, desenvolvida especificamente para quebrar pigmentos quentes (avermelhados e alaranjados) que outros lasers não conseguiam eliminar, sem agredir ou queimar os fios naturais.",
+          "Varia conforme a quantidade e profundidade do pigmento anterior, avaliado individualmente em nossa clínica.",
       },
     ],
     whatsappMessage:
-      "Olá! Gostaria de agendar uma avaliação para Remoção a Laser Ömer 3D na Maura Lima Aldeota.",
+      "Olá! Gostaria de agendar uma avaliação para Depigmentação na Maura Lima Aldeota.",
   },
   {
     id: "design-de-sobrancelhas",
@@ -802,18 +782,110 @@ export const SERVICES: ServiceItem[] = [
     whatsappMessage:
       "Olá! Gostaria de agendar Unhas / Manicure e Pedicure na Maura Lima Aldeota.",
   },
+  {
+    id: "corte-de-cabelo-masculino",
+    slug: "corte-de-cabelo-masculino",
+    name: "Corte de Cabelo Masculino",
+    titleH1: "Corte de Cabelo Masculino em Fortaleza",
+    shortSummary:
+      "Cortes modernos e clássicos com acabamento impecável, alinhamento de barba e atendimento personalizado em ambiente sofisticado na Aldeota.",
+    heroImage: "/CorteMasculino.jpg",
+    altImage: "Corte de cabelo masculino profissional em Fortaleza",
+    indicatedFor: ["Homens que buscam visual alinhado, moderno e elegante."],
+    stepByStep: [
+      { step: 1, title: "Alinhamento do Estilo", description: "Consulta rápida sobre o corte desejado." },
+      { step: 2, title: "Corte e Acabamento", description: "Execução com tesoura e máquina com precisão." },
+    ],
+    duration: "40 a 50 minutos.",
+    expectedResults: "Visual renovado, elegante e corte simétrico.",
+    preCare: ["Nenhum cuidado especial prévio."],
+    postCare: ["Manutenção do corte a cada 3 a 4 semanas."],
+    contraindications: ["Nenhuma contraindicação."],
+    whenToSeekEvaluation: "Agende quando precisar renovar o corte ou alinhar o visual.",
+    faqs: [{ question: "Inclui acabamento de barba?", answer: "Sim, oferecemos opções completas." }],
+    whatsappMessage: "Olá! Gostaria de agendar Corte de Cabelo Masculino na Maura Lima.",
+  },
+  {
+    id: "spa-dos-pes",
+    slug: "spa-dos-pes",
+    name: "Spa dos Pés",
+    titleH1: "Spa dos Pés em Fortaleza",
+    shortSummary:
+      "Protocolo relaxante de hidratação profunda, esfoliação renovadora e massagem revigorante para pés macios e leves.",
+    heroImage: "/Spa dos pés.jpg",
+    altImage: "Spa dos pés relaxante na Maura Lima Fortaleza",
+    indicatedFor: ["Pés cansados, ressecados ou que buscam relaxamento profundo."],
+    stepByStep: [
+      { step: 1, title: "Escalda-pés e Esfoliação", description: "Remoção de células mortas e relaxamento." },
+      { step: 2, title: "Hidratação e Massagem", description: "Aplicação de cremes nobres e massagem relaxante." },
+    ],
+    duration: "45 minutos.",
+    expectedResults: "Pés extremamente macios, renovados e alívio imediato do cansaço.",
+    preCare: ["Nenhum."],
+    postCare: ["Manter hidratação diária."],
+    contraindications: ["Lesões abertas nos pés."],
+    whenToSeekEvaluation: "Sempre que desejar relaxamento e cuidado profundo.",
+    faqs: [{ question: "O spa dos pés inclui cutilagem?", answer: "Pode ser integrado ao atendimento de podologia ou manicure." }],
+    whatsappMessage: "Olá! Gostaria de agendar Spa dos Pés na Maura Lima.",
+  },
+  {
+    id: "podologia",
+    slug: "podologia",
+    name: "Podologia",
+    titleH1: "Podologia Profissional em Fortaleza",
+    shortSummary:
+      "Saúde e cuidados especializados para os pés, prevenção de calosidades, unhas encravadas e higienização com rigor clínico.",
+    heroImage: "/Podologia.jpg",
+    altImage: "Atendimento de podologia profissional na Maura Lima",
+    indicatedFor: ["Tratamento de calos, unhas encravadas e cuidados preventivos."],
+    stepByStep: [
+      { step: 1, title: "Avaliação Podológica", description: "Exame detalhado da saúde dos pés e unhas." },
+      { step: 2, title: "Tratamento Clínico", description: "Remoção de calosidades e cuidados com o sulco ungueal." },
+    ],
+    duration: "50 minutos.",
+    expectedResults: "Pés saudáveis, livres de desconfortos e perfeitamente higienizados.",
+    preCare: ["Comparecer com pés limpos."],
+    postCare: ["Seguir orientações do podólogo."],
+    contraindications: ["Infecções graves em estágio agudo sem liberação."],
+    whenToSeekEvaluation: "Sempre que sentir dor ou desconforto nos pés.",
+    faqs: [{ question: "O procedimento é doloroso?", answer: "Realizado com técnica especializada para conforto total." }],
+    whatsappMessage: "Olá! Gostaria de agendar Podologia na Maura Lima.",
+  },
+  {
+    id: "brow-lamination",
+    slug: "brow-lamination",
+    name: "Brow Lamination",
+    titleH1: "Brow Lamination em Fortaleza",
+    shortSummary:
+      "Técnica inovadora que alinha, disciplina e fixa os pelos das sobrancelhas para cima, proporcionando um efeito volumoso, encorpado e super moderno.",
+    heroImage: "/brownlamination.jpg",
+    altImage: "Brow Lamination profissional na Maura Lima Fortaleza",
+    indicatedFor: ["Sobrancelhas rebeldes, falhadas ou que buscam efeito encorpado e moderno."],
+    stepByStep: [
+      { step: 1, title: "Alinhamento dos Fios", description: "Aplicação de loção para moldar os fios na direção desejada." },
+      { step: 2, title: "Nutrição e Fixação", description: "Selinamento e hidratação profunda para brilho duradouro." },
+    ],
+    duration: "45 a 60 minutos.",
+    expectedResults: "Sobrancelhas alinhadas, volumosas e com efeito impecável por semanas.",
+    preCare: ["Evitar extrusão ou pinça 15 dias antes."],
+    postCare: ["Não molhar nas primeiras 24 horas."],
+    contraindications: ["Pele extremamente sensibilizada na região."],
+    whenToSeekEvaluation: "Ideal para quem quer o visual trendy de sobrancelhas penteadas para cima.",
+    faqs: [{ question: "Quanto tempo dura?", answer: "Em média 4 a 6 semanas." }],
+    whatsappMessage: "Olá! Gostaria de agendar Brow Lamination na Maura Lima.",
+  },
 ];
 
 export const HERO_SLIDES = [
   {
     id: 1,
-    title: "NATURAL. ELEGANTE. SUA.",
+    title: "SINTA-SE EM CASA. VOCÊ EM SUA MELHOR VERSÃO.",
     subtitle: "MAURA LIMA – SPECIALIST EYEBROWS",
     description:
-      "Realce a sua beleza de forma leve, no seu tempo, com quem entende de sobrancelhas.",
-    ctaText: "AGENDAR PELO WHATSAPP",
+      "Um espaço feito com carinho para cuidar de você, realçando sua beleza natural com leveza e acolhimento.",
+    ctaText: "QUERO CONVERSAR NO WHATSAPP",
     ctaLink:
-      "https://wa.me/5585989578885?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20pelo%20WhatsApp.",
+      "https://wa.me/5585989578885?text=Ol%C3%A1%2C%20gostaria%20de%20conversar%20sobre%20os%20atendimentos%20na%20Maura%20Lima.",
     image:
       "/images/designdesobramcelha-1.jpg",
     video:
@@ -822,33 +894,33 @@ export const HERO_SLIDES = [
   },
   {
     id: 2,
-    title: "REMOÇÃO A LASER ÖMER 3D",
-    subtitle: "Tecnologia de Ponta para Restauração da Pele",
+    title: "DEPIGMENTAÇÃO COM CUIDADO E SEGURANÇA",
+    subtitle: "Restauração e Leveza para o Seu Olhar",
     description:
-      "A inovação mais avançada para remover micropigmentação antiga sem agredir os pelos, atingindo inclusive tons avermelhados e alaranjados.",
-    ctaText: "SAIBA MAIS SOBRE A REMOÇÃO A LASER",
+      "Um tratamento delicado e tecnológico para clarear micropigmentações antigas, devolvendo a harmonia e a suavidade natural ao seu rosto.",
+    ctaText: "QUERO SABER MAIS SOBRE A DEPIGMENTAÇÃO",
     ctaLink:
-      "/servicos/remocao-a-laser-omer-3d",
+      "/servicos/depigmentacao",
     image:
-      "/images/remocao-laser.jpg",
+      "/omer.jpg",
     video:
       "https://assets.mixkit.co/videos/preview/mixkit-skin-care-routine-of-a-woman-applying-creams-41222-large.mp4",
-    alt: "Procedimento de alta precisão com laser Ömer 3D na Maura Lima",
+    alt: "Procedimento de depigmentação com total carinho na Maura Lima",
   },
   {
     id: 3,
-    title: "DESIGN DE SOBRANCELHAS",
-    subtitle: "Mapeamento Facial Exclusivo e Sob Medida",
+    title: "DESIGN DE SOBRANCELHAS SOB MEDIDA",
+    subtitle: "Valorizando a Sua Expressão Única",
     description:
-      "Simetria milimétrica, valorização da curvatura natural e respeito à anatomia do seu rosto, sem afinar ou perder a leveza da sua expressão. Conheça também nossos cursos profissionais.",
-    ctaText: "SAIBA MAIS SOBRE O CURSO",
+      "Um abraço em forma de design: mapeamento personalizado que respeita a sua essência, sua anatomia e o seu bem-estar. Venha conhecer também nossos cursos!",
+    ctaText: "CONHEÇA NOSSOS CURSOS",
     ctaLink:
       "/cursos",
     image:
       "/images/designdesobramcelha-1.jpg",
     video:
       "https://assets.mixkit.co/videos/preview/mixkit-woman-applying-her-eyeshadow-in-front-of-a-mirror-40742-large.mp4",
-    alt: "Design minucioso e harmônico de sobrancelhas femininas",
+    alt: "Design minucioso e acolhedor de sobrancelhas",
   },
   {
     id: 4,

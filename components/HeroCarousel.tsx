@@ -115,12 +115,7 @@ export default function HeroCarousel() {
       {/* Conteúdo Centralizado Sem Caixa de Texto e sem fade in/out */}
       <div className="relative z-20 max-w-5xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-center text-center">
         <div key={`content-${currentSlide.id}`} className="flex flex-col items-center justify-center max-w-3xl">
-          {/* Subtítulo / Marca */}
-          <div className="mb-4">
-            <span className="inline-block text-[11px] sm:text-xs font-bold tracking-[0.3em] text-[#DFBF73] uppercase drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
-              {currentSlide.subtitle}
-            </span>
-          </div>
+
 
           {/* Texto de Impacto Centralizado em MAIÚSCULAS */}
           <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-[0.12em] text-white uppercase leading-[1.08] mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)]">
