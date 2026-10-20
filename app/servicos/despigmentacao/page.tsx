@@ -3,25 +3,25 @@ import { notFound } from 'next/navigation';
 import { SERVICES } from '@/lib/salon-data';
 import ServiceDetailTemplate from '@/components/ServiceDetailTemplate';
 
-const service = SERVICES.find((s) => s.slug === 'depigmentacao');
+const service = SERVICES.find((s) => s.slug === 'despigmentacao');
 
 export const metadata: Metadata = {
-  title: 'Depigmentação em Fortaleza | Maura Lima Aldeota',
+  title: 'Despigmentação em Fortaleza | Maura Lima Aldeota',
   description:
     'Método especializado em clareamento e remoção gradual de micropigmentações antigas com segurança e cuidado na Aldeota, Fortaleza.',
   openGraph: {
-    title: 'Depigmentação em Fortaleza | Maura Lima Aldeota',
+    title: 'Despigmentação em Fortaleza | Maura Lima Aldeota',
     description:
       'Método especializado em clareamento e remoção gradual de micropigmentações antigas com segurança e cuidado.',
-    url: 'https://mauralima.com.br/servicos/depigmentacao',
+    url: 'https://mauralima.com.br/servicos/despigmentacao',
     type: 'website',
   },
   alternates: {
-    canonical: '/servicos/depigmentacao',
+    canonical: '/servicos/despigmentacao',
   },
 };
 
-export default function DepigmentacaoPage() {
+export default function DespigmentacaoPage() {
   if (!service) return notFound();
   return <ServiceDetailTemplate service={service} />;
 }

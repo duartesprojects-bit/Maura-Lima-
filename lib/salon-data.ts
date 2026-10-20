@@ -149,16 +149,16 @@ export const COURSES: CourseItem[] = [
 
 export const SERVICES: ServiceItem[] = [
   {
-    id: "depigmentacao",
-    slug: "depigmentacao",
-    name: "Depigmentação",
-    titleH1: "Depigmentação em Fortaleza",
+    id: "despigmentacao",
+    slug: "despigmentacao",
+    name: "Despigmentação",
+    titleH1: "Despigmentação em Fortaleza",
     shortSummary:
       "Método especializado em clareamento e remoção gradual de pigmentos indesejados de micropigmentações antigas. Procedimento seguro realizado com ativos e tecnologias que respeitam a integridade da pele e preservam a saúde dos pelos naturais na Aldeota.",
     heroImage:
       "/omer.jpg",
     altImage:
-      "Procedimento de depigmentação de sobrancelhas na Maura Lima Aldeota Fortaleza",
+      "Procedimento de despigmentação de sobrancelhas na Maura Lima Aldeota Fortaleza",
     indicatedFor: [
       "Pessoas com micropigmentação antiga, esverdeada, azulada ou avermelhada.",
       "Quem deseja clarear o pigmento para refazer um novo design de sobrancelhas harmônico e natural.",
@@ -176,11 +176,11 @@ export const SERVICES: ServiceItem[] = [
         step: 2,
         title: "Assepsia e Preparação da Região",
         description:
-          "Higienização rigorosa e aplicação de produtos específicos para otimizar o processo de depigmentação.",
+          "Higienização rigorosa e aplicação de produtos específicos para otimizar o processo de despigmentação.",
       },
       {
         step: 3,
-        title: "Aplicação do Protocolo de Depigmentação",
+        title: "Aplicação do Protocolo de Despigmentação",
         description:
           "Aplicação técnica controlada para neutralizar e extrair o pigmento residual de forma gradual.",
       },
@@ -210,7 +210,7 @@ export const SERVICES: ServiceItem[] = [
       "Agende uma avaliação se sua micropigmentação mudou de cor ou se deseja restaurar a leveza do seu olhar.",
     faqs: [
       {
-        question: "A depigmentação danifica os pelos naturais?",
+        question: "A despigmentação danifica os pelos naturais?",
         answer:
           "Não. Nosso protocolo é focado em preservar a integridade e o crescimento saudável dos seus pelos.",
       },
@@ -221,7 +221,7 @@ export const SERVICES: ServiceItem[] = [
       },
     ],
     whatsappMessage:
-      "Olá! Gostaria de agendar uma avaliação para Depigmentação na Maura Lima Aldeota.",
+      "Olá! Gostaria de agendar uma avaliação para Despigmentação na Maura Lima Aldeota.",
   },
   {
     id: "design-de-sobrancelhas",

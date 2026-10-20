@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     template: '%s | Maura Lima Fortaleza',
   },
   description:
-    'Especialista em Design de Sobrancelhas, Depigmentação, Cílios Volume Brasileiro, Cabelo, Maquiagem e Cursos Profissionais de Estética na Aldeota e Maison Sul em Fortaleza. Agende pelo WhatsApp.',
+    'Especialista em Design de Sobrancelhas, Despigmentação, Cílios Volume Brasileiro, Cabelo, Maquiagem e Cursos Profissionais de Estética na Aldeota e Maison Sul em Fortaleza. Agende pelo WhatsApp.',
   keywords: [
     'sobrancelhas fortaleza',
     'maura lima fortaleza',
     'design de sobrancelhas aldeota',
-    'depigmentacao',
+    'despigmentacao',
     'extensao de cilios fortaleza',
     'salao aldeota fortaleza',
     'maquiagem profissional fortaleza',
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     siteName: 'Maura Lima – Especialista em Sobrancelhas Fortaleza',
     title: 'Maura Lima – Especialista em Sobrancelhas | Salão e Cursos em Fortaleza (Aldeota e Maison Sul)',
     description:
-      'Referência em design de sobrancelhas, depigmentação, estética facial e cursos profissionais em Fortaleza.',
+      'Referência em design de sobrancelhas, despigmentação, estética facial e cursos profissionais em Fortaleza.',
     images: [
       {
         url: '/LogoPreta (2).png',
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Maura Lima – Especialista em Sobrancelhas Fortaleza',
     description:
-      'Design de sobrancelhas, depigmentação, cílios, maquiagem e cursos na Aldeota e Maison Sul.',
+      'Design de sobrancelhas, despigmentação, cílios, maquiagem e cursos na Aldeota e Maison Sul.',
     images: ['/LogoPreta (2).png'],
   },
   robots: {
