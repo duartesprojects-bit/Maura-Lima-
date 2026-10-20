@@ -171,31 +171,35 @@ export default function HomePage() {
               </div>
             </article>
 
-            {/* Card de Atendimento Personalizado Perolado Arredondado */}
-            <div className="pearl-card text-white p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden">
-              <div className="relative z-10">
-                <span className="text-xs font-bold tracking-[0.2em] text-[#C9A24B] uppercase block mb-3">
+            </div>
+          </div>
+
+          {/* Banner de Consulta Especializada */}
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
+            <div className="pearl-card text-white p-8 sm:p-12 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-hidden rounded-3xl shadow-xl">
+              <div className="relative z-10 max-w-2xl">
+                <span className="text-xs font-bold tracking-[0.2em] text-[#C9A24B] uppercase block mb-2">
                   CONSULTA ESPECIALIZADA
                 </span>
-                <h3 className="font-heading text-xl font-bold uppercase tracking-wider mb-4 leading-snug">
+                <h3 className="font-heading text-xl sm:text-2xl font-bold uppercase tracking-wider mb-3 leading-snug">
                   Dúvidas sobre qual o melhor procedimento para o seu olhar?
                 </h3>
-                <p className="text-sm text-neutral-200 font-normal leading-relaxed mb-6">
-                  Nossas consultoras analisam seu caso e orientam o tratamento mais indicado, seja para iniciar a remoção com laser Ömer 3D ou para conquistar o design perfeito.
+                <p className="text-sm text-neutral-200 font-normal leading-relaxed">
+                  Nossas consultoras analisam seu caso com todo carinho e orientam o tratamento mais indicado, seja para iniciar a depigmentação ou para conquistar o design perfeito na Aldeota.
                 </p>
               </div>
 
-              <div className="relative z-10 pt-4">
+              <div className="relative z-10 shrink-0">
                 <a
                   href={SALON_INFO.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="pearl-button w-full group inline-flex items-center justify-center select-none"
+                  className="pearl-button group inline-flex items-center justify-center select-none"
                 >
-                  <span className="pearl-btn-wrap flex items-center justify-center gap-2 py-3.5 px-6">
+                  <span className="pearl-btn-wrap flex items-center justify-center gap-2 py-4 px-8">
                     <span className="flex items-center gap-2 relative z-10">
-                      <MessageCircle className="w-4 h-4 fill-current text-[#C9A24B] group-hover:scale-110 transition-transform" />
-                      <span className="tracking-[0.14em] uppercase font-bold text-xs text-white">
+                      <MessageCircle className="w-5 h-5 fill-current text-[#C9A24B] group-hover:scale-110 transition-transform" />
+                      <span className="tracking-[0.14em] uppercase font-bold text-xs sm:text-sm text-white">
                         FALAR COM UMA ESPECIALISTA
                       </span>
                     </span>
@@ -204,8 +208,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* CARROSSEL CONHEÇA NOSSO SALÃO */}
       <SalonGalleryCarousel />
