@@ -16,7 +16,7 @@ export default function Footer() {
             >
               <Image
                 src="/logoBranca (2).png"
-                alt="Maura Lima – Specialist Eyebrows Fortaleza"
+                alt="Maura Lima – Especialista em Sobrancelhas Fortaleza"
                 width={260}
                 height={90}
                 className="h-16 sm:h-20 md:h-24 w-auto object-contain group-hover:opacity-90 transition-opacity"
@@ -24,7 +24,7 @@ export default function Footer() {
             </Link>
             <p className="text-sm text-neutral-400 font-light leading-relaxed">
               Pioneira e especialista na arte de valorizar a beleza natural através do design
-              de sobrancelhas milimétrico, remoção a laser Ömer 3D de alta precisão e estética facial na Aldeota.
+              de sobrancelhas milimétrico, despigmentação de alta precisão e estética facial na Aldeota.
             </p>
             <div className="pt-2">
               <a

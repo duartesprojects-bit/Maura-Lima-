@@ -33,8 +33,8 @@ export default function HomePage() {
             </h2>
             <div className="w-16 h-[2px] bg-[#C9A24B] mx-auto mb-6" />
             <p className="text-base sm:text-lg text-neutral-700 font-normal leading-relaxed">
-              No coração da Aldeota, em Fortaleza, a Maura Lima une precisão cirúrgica no design de sobrancelhas,
-              a avançada tecnologia do laser Ömer 3D e uma atmosfera serena para proporcionar uma experiência de autocuidado singular.
+              No coração da Aldeota, em Fortaleza, a Maura Lima une precisão no design de sobrancelhas,
+              a avançada tecnologia de despigmentação e uma atmosfera serena para proporcionar uma experiência de autocuidado acolhedora e singular.
             </p>
           </div>
 
@@ -471,7 +471,7 @@ export default function HomePage() {
               <div className="w-16 h-[2px] bg-[#C9A24B]" />
 
               <p className="text-base text-neutral-700 font-light leading-relaxed">
-                A marca <strong className="font-medium text-[#0D0D0D]">Maura Lima – Specialist Eyebrows</strong> construiu uma reputação de referência no Brasil ao tratar o design de sobrancelhas não como um procedimento rotineiro, mas como uma arte de personalização extrema.
+                A marca <strong className="font-medium text-[#0D0D0D]">Maura Lima – Especialista em Sobrancelhas</strong> construiu uma reputação de referência no Brasil ao tratar o design de sobrancelhas não como um procedimento rotineiro, mas como uma arte de personalização extrema.
               </p>
 
               <p className="text-base text-neutral-700 font-light leading-relaxed">

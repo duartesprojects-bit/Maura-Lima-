@@ -360,7 +360,7 @@ export const SERVICES: ServiceItem[] = [
     ],
     duration: "Aproximadamente 1h30 a 2 horas.",
     expectedResults:
-      "Sobrancelhas preenchidas, simétricas e com efeito natural que dura em média de 1 a 2 anos. Conheça também nossa página de Remoção a Laser Ömer 3D caso precise corrigir pigmentos antigos indesejados.",
+      "Sobrancelhas preenchidas, simétricas e com efeito natural que dura em média de 1 a 2 anos. Conheça também nossa página de Despigmentação caso precise corrigir pigmentos antigos indesejados.",
     preCare: [
       "Evitar exposição solar intensa nos 7 dias anteriores.",
       "Suspender ácidos na região por 72 horas antes.",
@@ -449,7 +449,7 @@ export const SERVICES: ServiceItem[] = [
         step: 4,
         title: "Secagem Nano Mist e Penteado",
         description:
-          "Nebulização que sela a cianocrilato e elimina vapores, conferindo conforto imediato e conferência da simetria.",
+          "Nebulização que sela o cianoacrilato e elimina vapores, conferindo conforto imediato e conferência da simetria.",
       },
     ],
     duration: "Cerca de 1h30 a 2h para a aplicação inicial completa.",
@@ -863,11 +863,11 @@ export const SERVICES: ServiceItem[] = [
     indicatedFor: ["Sobrancelhas rebeldes, falhadas ou que buscam efeito encorpado e moderno."],
     stepByStep: [
       { step: 1, title: "Alinhamento dos Fios", description: "Aplicação de loção para moldar os fios na direção desejada." },
-      { step: 2, title: "Nutrição e Fixação", description: "Selinamento e hidratação profunda para brilho duradouro." },
+      { step: 2, title: "Nutrição e Fixação", description: "Selamento e hidratação profunda para brilho duradouro." },
     ],
     duration: "45 a 60 minutos.",
     expectedResults: "Sobrancelhas alinhadas, volumosas e com efeito impecável por semanas.",
-    preCare: ["Evitar extrusão ou pinça 15 dias antes."],
+    preCare: ["Evitar extração ou pinça 15 dias antes."],
     postCare: ["Não molhar nas primeiras 24 horas."],
     contraindications: ["Pele extremamente sensibilizada na região."],
     whenToSeekEvaluation: "Ideal para quem quer o visual trendy de sobrancelhas penteadas para cima.",
@@ -880,7 +880,7 @@ export const HERO_SLIDES = [
   {
     id: 1,
     title: "SINTA-SE EM CASA. VOCÊ EM SUA MELHOR VERSÃO.",
-    subtitle: "MAURA LIMA – SPECIALIST EYEBROWS",
+    subtitle: "MAURA LIMA – ESPECIALISTA EM SOBRANCELHAS",
     description:
       "Um espaço feito com carinho para cuidar de você, realçando sua beleza natural com leveza e acolhimento.",
     ctaText: "QUERO CONVERSAR NO WHATSAPP",
@@ -953,10 +953,10 @@ export const REVIEWS = [
     id: 2,
     name: "Dra. Camila Albuquerque",
     location: "Meireles, Fortaleza",
-    service: "Remoção a Laser Ömer 3D",
+    service: "Despigmentação",
     rating: 5,
     date: "Há 1 mês",
-    text: "Tinha uma micropigmentação antiga que havia ficado avermelhada e nenhuma clínica conseguia clarear. Com o laser Ömer 3D na Maura Lima o resultado na terceira sessão foi incrível! Não danificou meus pelos.",
+    text: "Tinha uma micropigmentação antiga que havia ficado avermelhada e nenhuma clínica conseguia clarear. Com a despigmentação na Maura Lima o resultado na terceira sessão foi incrível! Não danificou meus pelos.",
   },
   {
     id: 3,
