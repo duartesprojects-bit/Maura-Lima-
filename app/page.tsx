@@ -185,7 +185,7 @@ export default function HomePage() {
                   Dúvidas sobre qual o melhor procedimento para o seu olhar?
                 </h3>
                 <p className="text-sm text-neutral-200 font-normal leading-relaxed">
-                  Nossas consultoras analisam seu caso com todo carinho e orientam o tratamento mais indicado, seja para iniciar a depigmentação ou para conquistar o design perfeito na Aldeota.
+                  Nossas consultoras analisam seu caso com todo carinho e orientam o tratamento mais indicado, seja para iniciar a despigmentação ou para conquistar o design perfeito na Aldeota.
                 </p>
               </div>
 
@@ -475,7 +475,7 @@ export default function HomePage() {
               </p>
 
               <p className="text-base text-neutral-700 font-light leading-relaxed">
-                Na nossa unidade em Fortaleza, situada na Rua Monsenhor Catão, combinamos esse legado de visagismo com as mais modernas tecnologias mundiais, como a <strong className="font-medium text-[#0D0D0D]">Depigmentação</strong>, a delicadeza dos cílios em <strong className="font-medium text-[#0D0D0D]">Volume Brasileiro</strong> e uma equipe completa de coloração capilar e maquiagem de alta durabilidade.
+                Na nossa unidade em Fortaleza, situada na Rua Monsenhor Catão, combinamos esse legado de visagismo com as mais modernas tecnologias mundiais, como a <strong className="font-medium text-[#0D0D0D]">Despigmentação</strong>, a delicadeza dos cílios em <strong className="font-medium text-[#0D0D0D]">Volume Brasileiro</strong> e uma equipe completa de coloração capilar e maquiagem de alta durabilidade.
               </p>
 
               <div className="space-y-3 pt-2">

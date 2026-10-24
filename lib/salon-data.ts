@@ -894,18 +894,18 @@ export const HERO_SLIDES = [
   },
   {
     id: 2,
-    title: "DEPIGMENTAÇÃO COM CUIDADO E SEGURANÇA",
+    title: "DESPIGMENTAÇÃO COM CUIDADO E SEGURANÇA",
     subtitle: "Restauração e Leveza para o Seu Olhar",
     description:
       "Um tratamento delicado e tecnológico para clarear micropigmentações antigas, devolvendo a harmonia e a suavidade natural ao seu rosto.",
-    ctaText: "QUERO SABER MAIS SOBRE A DEPIGMENTAÇÃO",
+    ctaText: "QUERO SABER MAIS SOBRE A DESPIGMENTAÇÃO",
     ctaLink:
-      "/servicos/depigmentacao",
+      "/servicos/despigmentacao",
     image:
       "/omer.jpg",
     video:
       "https://assets.mixkit.co/videos/preview/mixkit-skin-care-routine-of-a-woman-applying-creams-41222-large.mp4",
-    alt: "Procedimento de depigmentação com total carinho na Maura Lima",
+    alt: "Procedimento de despigmentação com total carinho na Maura Lima",
   },
   {
     id: 3,
