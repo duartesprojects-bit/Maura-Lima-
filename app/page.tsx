@@ -20,7 +20,7 @@ import sobreImage from '@/src/assets/images/images/Improve_lighting_2K_202610131
 
 export default function HomePage() {
   return (
-    <div className="bg-white text-[#262626]">
+    <div className="bg-white text-[#262626] overflow-x-hidden">
       {/* 1. HERO SECTION (CARROSSEL COM IMAGENS E VÍDEO) */}
       <HeroCarousel />
 
@@ -445,7 +445,7 @@ export default function HomePage() {
               </div>
 
               {/* Float badge in gold/dark */}
-              <div className="absolute -bottom-6 -right-6 sm:bottom-6 sm:right-6 bg-[#0D0D0D] text-white p-6 border border-[#C9A24B]/50 shadow-2xl max-w-xs">
+              <div className="absolute bottom-3 right-3 sm:bottom-6 sm:right-6 bg-[#0D0D0D] text-white p-4 sm:p-6 border border-[#C9A24B]/50 shadow-2xl max-w-[240px] sm:max-w-xs">
                 <span className="text-2xl font-bold font-heading text-[#C9A24B] block">
                   ALDEOTA
                 </span>

@@ -117,31 +117,30 @@ export default function HeroCarousel() {
       </div>
 
       {/* Conteúdo Centralizado Sem Caixa de Texto e sem fade in/out */}
-      <div className="relative z-20 max-w-5xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-center text-center">
-        <div key={`content-${currentSlide.id}`} className="flex flex-col items-center justify-center max-w-3xl">
-
+      <div className="relative z-20 w-full max-w-6xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex items-center justify-center text-center">
+        <div key={`content-${currentSlide.id}`} className="w-full max-w-full sm:max-w-4xl lg:max-w-5xl flex flex-col items-center justify-center">
 
           {/* Texto de Impacto Centralizado em MAIÚSCULAS */}
-          <h1 className="font-heading text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-[0.12em] text-white uppercase leading-[1.08] mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)]">
+          <h1 className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-[0.03em] sm:tracking-[0.08em] text-white uppercase leading-[1.15] sm:leading-[1.1] mb-4 sm:mb-6 w-full break-normal drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)]">
             {currentSlide.title}
           </h1>
 
           {/* Descrição Leve e Elegante */}
-          <p className="text-base sm:text-xl lg:text-2xl text-white font-normal leading-relaxed max-w-2xl mx-auto mb-10 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
+          <p className="text-sm sm:text-xl lg:text-2xl text-white font-normal leading-relaxed w-full max-w-full sm:max-w-2xl mx-auto mb-8 sm:mb-10 px-1 sm:px-0 drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)]">
             {currentSlide.description}
           </p>
 
           {/* Botão de Agendamento Centralizado - Transparente com Borda em Branco */}
-          <div className="pt-2">
+          <div className="pt-2 w-full sm:w-auto">
             <a
               href={currentSlide.ctaLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent hover:bg-white/20 text-white transition-all duration-300 py-3.5 sm:py-4 px-8 sm:px-11 shadow-lg group/btn backdrop-blur-sm"
+              className="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent hover:bg-white/20 text-white transition-all duration-300 py-3 sm:py-4 px-5 sm:px-11 max-w-full shadow-lg group/btn backdrop-blur-sm"
             >
-              <span className="flex items-center gap-2.5">
-                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-white group-hover/btn:scale-110 transition-transform" />
-                <span className="tracking-[0.16em] uppercase font-bold text-xs sm:text-sm text-white drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
+              <span className="flex items-center justify-center gap-2 sm:gap-2.5 text-center">
+                <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 text-white group-hover/btn:scale-110 transition-transform" />
+                <span className="tracking-[0.08em] sm:tracking-[0.16em] uppercase font-bold text-[11px] sm:text-sm text-white leading-tight drop-shadow-[0_1px_4px_rgba(0,0,0,0.8)]">
                   {currentSlide.ctaText}
                 </span>
               </span>

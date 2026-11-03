@@ -123,9 +123,15 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
           <p>
-            © {new Date().getFullYear()} Maura Lima – Specialist Eyebrows Fortaleza. Todos os direitos reservados.
+            © {new Date().getFullYear()} Maura Lima – Especialista em Sobrancelhas Fortaleza. Todos os direitos reservados.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            <Link
+              href="/politica-de-privacidade"
+              className="text-[11px] text-neutral-300 hover:text-[#C9A24B] underline underline-offset-4 transition-colors"
+            >
+              Política de Privacidade e Cookies
+            </Link>
             <span className="text-[11px] text-neutral-400 flex items-center gap-1">
               Feito com excelência para Aldeota, Fortaleza - CE
             </span>

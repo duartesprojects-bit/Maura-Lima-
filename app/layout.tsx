@@ -4,6 +4,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import WhatsAppFloatingButton from '@/components/WhatsAppFloatingButton';
+import CookieConsentBanner from '@/components/CookieConsentBanner';
 import ChunkErrorHandler from '@/components/ChunkErrorHandler';
 import { SALON_INFO } from '@/lib/salon-data';
 
@@ -146,6 +147,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppFloatingButton />
+        <CookieConsentBanner />
       </body>
     </html>
   );
