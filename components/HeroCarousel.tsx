@@ -105,7 +105,11 @@ export default function HeroCarousel() {
             alt={currentSlide.alt}
             fill
             priority={currentIndex === 0}
-            className="object-cover object-center"
+            className={`object-cover ${
+              currentSlide.id === 2
+                ? 'object-[78%_center] sm:object-center'
+                : 'object-center'
+            }`}
             sizes="100vw"
             referrerPolicy="no-referrer"
           />

@@ -8,27 +8,39 @@ import { ChevronLeft, ChevronRight, Sparkles, Image as ImageIcon } from 'lucide-
 const SALON_GALLERY_IMAGES = [
   {
     id: 1,
-    title: "Recepção Exclusiva",
-    subtitle: "Maura Lima Aldeota",
-    image: "/recepção.jpg",
+    title: "Recepção Maura Lima",
+    subtitle: "Boas-vindas com Carinho",
+    image: "/assets/aistudio/Recepcao2_ff138ce0.png",
   },
   {
     id: 2,
-    title: "Sala de Atendimento Especializada",
-    subtitle: "Conforto e Privacidade",
-    image: "/sala de atendimento.jpg",
+    title: "Sala de Espera Acolhedora",
+    subtitle: "Conforto e Sofisticação",
+    image: "/assets/aistudio/Recepcao_9712a7ed.png",
   },
   {
     id: 3,
-    title: "Estacionamento Próprio",
-    subtitle: "Comodidade e Segurança",
-    image: "/estacionamento.jpg",
+    title: "Lounge e Bem-Estar",
+    subtitle: "Ambiente Relaxante",
+    image: "/assets/aistudio/AAjk-CNZPsV3Z4033WGwfwljOmrvTLasWPZoUjL0SJETpolfNU7N5djHINOK3B7QAHSv8FO_qLf7FGRVBHSR3sJut4Bs3WnHI12ENrPyefq1KQFPTWjq3MtofLRK4-eS9JnFHIlXHCm_w1080-h1506-k-no_12dc569a.png",
   },
   {
     id: 4,
-    title: "Ambiente Sofisticado",
-    subtitle: "Alta Qualidade em Fortaleza",
-    image: "/images/Improve_lighting_2K_20261013151319.jpg",
+    title: "Espaço de Atendimento",
+    subtitle: "Estrutura Completa e Climatizada",
+    image: "/assets/aistudio/AAjk-COUGyAB04sSEucRyXNDmWU4fT7NyAy20H3-nqCYVfepF_bZUVqWvTlqivSVsW6c8koHhR5hTO-NkLkj8DTT_O-6MViTzA9S6gro7AHRvVj7mX6OJ4sp3sbEtkP8eamgVEjQvAAw1080-h1334-k-no_d88b39ee.png",
+  },
+  {
+    id: 5,
+    title: "Salão de Cabeleireiro",
+    subtitle: "Beleza e Cuidado Capilar",
+    image: "/assets/aistudio/Salao_de_Cabeleireiro_4615fddc.png",
+  },
+  {
+    id: 6,
+    title: "Lavatório e Espaço de Cuidados",
+    subtitle: "Relaxamento e Conforto",
+    image: "/assets/aistudio/lavatorio_422a0b58.png",
   },
 ];
 
@@ -46,14 +58,8 @@ export default function SalonGalleryCarousel() {
   return (
     <section className="py-20 bg-neutral-50 border-b border-neutral-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header & Illustrative Notice */}
+        {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          {/* Notice above */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#C9A24B]/15 border border-[#C9A24B]/40 rounded-full text-xs font-semibold uppercase tracking-wider text-[#0D0D0D] mb-4">
-            <ImageIcon className="w-4 h-4 text-[#C9A24B]" />
-            <span>Aviso: Imagens ilustrativas, aguardando substituição oficial.</span>
-          </div>
-
           <span className="text-xs font-semibold tracking-[0.25em] text-[#C9A24B] uppercase block mb-2">
             EXPERIÊNCIA MAURA LIMA
           </span>
@@ -64,24 +70,34 @@ export default function SalonGalleryCarousel() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative max-w-4xl mx-auto bg-black rounded-3xl overflow-hidden shadow-2xl border border-neutral-800">
-          <div className="relative aspect-[16/9] sm:aspect-[21/9] w-full">
+        <div className="relative max-w-4xl mx-auto bg-neutral-950 rounded-3xl overflow-hidden shadow-2xl border border-neutral-800">
+          <div className="relative aspect-video sm:aspect-[16/10] w-full overflow-hidden">
+            {/* Ambient background fill so portrait photos never get cropped while keeping banner proportion */}
+            <Image
+              src={SALON_GALLERY_IMAGES[currentIndex].image}
+              alt=""
+              fill
+              aria-hidden="true"
+              className="object-cover object-center blur-xl opacity-45 scale-110"
+              sizes="(max-width: 1024px) 100vw, 900px"
+              referrerPolicy="no-referrer"
+            />
             <Image
               src={SALON_GALLERY_IMAGES[currentIndex].image}
               alt={SALON_GALLERY_IMAGES[currentIndex].title}
               fill
-              className="object-cover transition-all duration-700 opacity-90 hover:opacity-100"
+              className="object-contain object-center transition-all duration-700"
               sizes="(max-width: 1024px) 100vw, 900px"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
             {/* Caption */}
-            <div className="absolute bottom-6 left-6 right-6 text-white z-10">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#C9A24B] block mb-1">
+            <div className="absolute bottom-4 sm:bottom-6 left-5 sm:left-6 right-5 sm:right-6 text-white z-10">
+              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#C9A24B] block mb-0.5 sm:mb-1">
                 {SALON_GALLERY_IMAGES[currentIndex].subtitle}
               </span>
-              <h3 className="text-xl sm:text-2xl font-bold font-heading tracking-wide">
+              <h3 className="text-base sm:text-2xl font-bold font-heading tracking-wide">
                 {SALON_GALLERY_IMAGES[currentIndex].title}
               </h3>
             </div>

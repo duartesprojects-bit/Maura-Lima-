@@ -1,10 +1,14 @@
+import type { StaticImageData } from "next/image";
+import spaDosPesImage from "@/src/assets/images/regenerated_image_1793668533159.jpg";
+import despigmentacaoImage from "@/src/assets/images/regenerated_image_1793668752352.png";
+
 export interface ServiceItem {
   id: string;
   slug: string;
   name: string;
   titleH1: string;
   shortSummary: string;
-  heroImage: string;
+  heroImage: string | StaticImageData;
   altImage: string;
   indicatedFor: string[];
   stepByStep: { step: number; title: string; description: string }[];
@@ -156,7 +160,7 @@ export const SERVICES: ServiceItem[] = [
     shortSummary:
       "Método especializado em clareamento e remoção gradual de pigmentos indesejados de micropigmentações antigas. Procedimento seguro realizado com ativos e tecnologias que respeitam a integridade da pele e preservam a saúde dos pelos naturais na Aldeota.",
     heroImage:
-      "/omer.jpg",
+      despigmentacaoImage,
     altImage:
       "Procedimento de despigmentação de sobrancelhas na Maura Lima Aldeota Fortaleza",
     indicatedFor: [
@@ -812,7 +816,7 @@ export const SERVICES: ServiceItem[] = [
     titleH1: "Spa dos Pés em Fortaleza",
     shortSummary:
       "Protocolo relaxante de hidratação profunda, esfoliação renovadora e massagem revigorante para pés macios e leves.",
-    heroImage: "/Spa dos pés.jpg",
+    heroImage: spaDosPesImage,
     altImage: "Spa dos pés relaxante na Maura Lima Fortaleza",
     indicatedFor: ["Pés cansados, ressecados ou que buscam relaxamento profundo."],
     stepByStep: [
@@ -858,7 +862,7 @@ export const SERVICES: ServiceItem[] = [
     titleH1: "Brow Lamination em Fortaleza",
     shortSummary:
       "Técnica inovadora que alinha, disciplina e fixa os pelos das sobrancelhas para cima, proporcionando um efeito volumoso, encorpado e super moderno.",
-    heroImage: "/brownlamination.jpg",
+    heroImage: "/browlamination.jpg",
     altImage: "Brow Lamination profissional na Maura Lima Fortaleza",
     indicatedFor: ["Sobrancelhas rebeldes, falhadas ou que buscam efeito encorpado e moderno."],
     stepByStep: [
@@ -902,9 +906,8 @@ export const HERO_SLIDES = [
     ctaLink:
       "/servicos/despigmentacao",
     image:
-      "/omer.jpg",
-    video:
-      "https://assets.mixkit.co/videos/preview/mixkit-skin-care-routine-of-a-woman-applying-creams-41222-large.mp4",
+      "/Clínica Maura Lima em Atendimento.png",
+    video: "",
     alt: "Procedimento de despigmentação com total carinho na Maura Lima",
   },
   {

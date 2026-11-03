@@ -16,6 +16,7 @@ import {
 import HeroCarousel from '@/components/HeroCarousel';
 import SalonGalleryCarousel from '@/components/SalonGalleryCarousel';
 import { SALON_INFO, SERVICES, REVIEWS } from '@/lib/salon-data';
+import sobreImage from '@/src/assets/images/images/Improve_lighting_2K_20261013151319.jpg';
 
 export default function HomePage() {
   return (
@@ -425,9 +426,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CARROSSEL CONHEÇA NOSSO SALÃO */}
-      <SalonGalleryCarousel />
-
       {/* 4. SOBRE O SALÃO & MÉTODO MAURA LIMA */}
       <section id="sobre" className="py-24 bg-white border-b border-neutral-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -436,7 +434,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative aspect-square w-full border border-neutral-200 rounded-2xl overflow-hidden shadow-md">
                 <Image
-                  src="/images/Improve_lighting_2K_20261013151319.jpg"
+                  src={sobreImage}
                   alt="Espaço sofisticado e acolhedor do salão Maura Lima em Fortaleza"
                   fill
                   className="object-cover"
