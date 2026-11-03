@@ -70,24 +70,24 @@ export default function SalonGalleryCarousel() {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative max-w-4xl mx-auto bg-neutral-950 rounded-3xl overflow-hidden shadow-2xl border border-neutral-800">
-          <div className="relative aspect-video sm:aspect-[16/10] w-full overflow-hidden">
-            {/* Ambient background fill so portrait photos never get cropped while keeping banner proportion */}
+        <div className="relative max-w-5xl mx-auto bg-neutral-950 rounded-3xl overflow-hidden shadow-2xl border border-neutral-800">
+          <div className="relative h-[500px] sm:h-[660px] lg:h-[760px] w-full overflow-hidden">
+            {/* Ambient background layer */}
             <Image
               src={SALON_GALLERY_IMAGES[currentIndex].image}
               alt=""
               fill
               aria-hidden="true"
               className="object-cover object-center blur-xl opacity-45 scale-110"
-              sizes="(max-width: 1024px) 100vw, 900px"
+              sizes="(max-width: 1200px) 100vw, 1100px"
               referrerPolicy="no-referrer"
             />
             <Image
               src={SALON_GALLERY_IMAGES[currentIndex].image}
               alt={SALON_GALLERY_IMAGES[currentIndex].title}
               fill
-              className="object-contain object-center transition-all duration-700"
-              sizes="(max-width: 1024px) 100vw, 900px"
+              className="object-cover object-center transition-all duration-700"
+              sizes="(max-width: 1200px) 100vw, 1100px"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
