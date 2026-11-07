@@ -46,6 +46,24 @@ const nextConfig: NextConfig = {
         ignored: /.*/,
       };
     }
+
+    // Support .jxl image files in next-image-loader
+    const addJxlToImageRules = (rules: unknown[]) => {
+      for (const rule of rules) {
+        if (!rule || typeof rule !== 'object') continue;
+        const r = rule as { oneOf?: unknown[]; loader?: string; test?: RegExp };
+        if (r.oneOf && Array.isArray(r.oneOf)) {
+          addJxlToImageRules(r.oneOf);
+        }
+        if (r.loader && String(r.loader).includes('next-image-loader') && r.test instanceof RegExp) {
+          r.test = /\.(png|jpg|jpeg|gif|webp|avif|ico|bmp|svg|jxl)$/i;
+        }
+      }
+    };
+    if (config.module?.rules && Array.isArray(config.module.rules)) {
+      addJxlToImageRules(config.module.rules);
+    }
+
     return config;
   },
 };

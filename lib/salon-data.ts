@@ -1,6 +1,7 @@
 import type { StaticImageData } from "next/image";
 import spaDosPesImage from "@/src/assets/images/regenerated_image_1793668533159.jpg";
 import despigmentacaoImage from "@/src/assets/images/regenerated_image_1793668752352.png";
+import unhasImage from "@/src/assets/images/regenerated_image_1794083916135.jxl";
 
 export interface ServiceItem {
   id: string;
@@ -696,7 +697,7 @@ export const SERVICES: ServiceItem[] = [
     titleH1: "MANICURE E PEDICURE DE ALTO PADRÃO EM FORTALEZA",
     shortSummary:
       "Cuidados completos para mãos e pés com cutilagem milimétrica, esmaltação duradoura, blindagem e tratamentos de fortalecimento na Aldeota.",
-    heroImage: "/unhas.jpg",
+    heroImage: unhasImage,
     altImage: "Manicure e pedicure de alto padrão com esmalte nude na Maura Lima Aldeota",
     indicatedFor: [
       "Quem busca unhas impecáveis, limpas e com acabamento elegante para o dia a dia ou ocasiões especiais.",
