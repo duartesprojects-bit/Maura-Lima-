@@ -72,35 +72,53 @@ export default function SalonGalleryCarousel() {
         {/* Carousel Container */}
         <div className="relative max-w-5xl mx-auto bg-neutral-950 rounded-3xl overflow-hidden shadow-2xl border border-neutral-800">
           <div className="relative h-[500px] sm:h-[660px] lg:h-[760px] w-full overflow-hidden">
-            {/* Ambient background layer */}
-            <Image
-              src={SALON_GALLERY_IMAGES[currentIndex].image}
-              alt=""
-              fill
-              aria-hidden="true"
-              className="object-cover object-center blur-xl opacity-45 scale-110"
-              sizes="(max-width: 1200px) 100vw, 1100px"
-              referrerPolicy="no-referrer"
-            />
-            <Image
-              src={SALON_GALLERY_IMAGES[currentIndex].image}
-              alt={SALON_GALLERY_IMAGES[currentIndex].title}
-              fill
-              className="object-cover object-center transition-all duration-700"
-              sizes="(max-width: 1200px) 100vw, 1100px"
-              referrerPolicy="no-referrer"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+            {SALON_GALLERY_IMAGES.map((item, idx) => {
+              const isActive = idx === currentIndex;
+              return (
+                <div
+                  key={item.id}
+                  className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                    isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+                  }`}
+                >
+                  {/* Ambient background layer */}
+                  <Image
+                    src={item.image}
+                    alt=""
+                    fill
+                    aria-hidden="true"
+                    priority={idx <= 1}
+                    loading={idx <= 1 ? 'eager' : 'lazy'}
+                    quality={85}
+                    className="object-cover object-center blur-xl opacity-45 scale-110"
+                    sizes="(max-width: 1200px) 100vw, 1100px"
+                    referrerPolicy="no-referrer"
+                  />
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    priority={idx <= 1}
+                    loading={idx <= 1 ? 'eager' : 'lazy'}
+                    quality={90}
+                    className="object-cover object-center"
+                    sizes="(max-width: 1200px) 100vw, 1100px"
+                    referrerPolicy="no-referrer"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
-            {/* Caption */}
-            <div className="absolute bottom-4 sm:bottom-6 left-5 sm:left-6 right-5 sm:right-6 text-white z-10">
-              <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#C9A24B] block mb-0.5 sm:mb-1">
-                {SALON_GALLERY_IMAGES[currentIndex].subtitle}
-              </span>
-              <h3 className="text-base sm:text-2xl font-bold font-heading tracking-wide">
-                {SALON_GALLERY_IMAGES[currentIndex].title}
-              </h3>
-            </div>
+                  {/* Caption */}
+                  <div className="absolute bottom-4 sm:bottom-6 left-5 sm:left-6 right-5 sm:right-6 text-white z-10">
+                    <span className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#C9A24B] block mb-0.5 sm:mb-1">
+                      {item.subtitle}
+                    </span>
+                    <h3 className="text-base sm:text-2xl font-bold font-heading tracking-wide">
+                      {item.title}
+                    </h3>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           {/* Navigation Buttons */}

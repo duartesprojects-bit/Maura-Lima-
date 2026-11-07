@@ -80,40 +80,52 @@ export default function HeroCarousel() {
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Background Media (Vídeo e Imagem sem fade in/out e sem efeito de escurecimento) */}
+      {/* Background Media (Todas as mídias pré-carregadas para exibição instantânea sem atraso) */}
       <div className="absolute inset-0 w-full h-full">
-        {currentSlide.video ? (
-          <video
-            ref={videoRef}
-            key={currentSlide.video}
-            autoPlay
-            muted
-            playsInline
-            preload="auto"
-            poster={currentSlide.image}
-            onEnded={() => {
-              if (isPlaying) nextSlide();
-            }}
-            className="absolute inset-0 w-full h-full object-cover object-center"
-            aria-label={currentSlide.alt}
-          >
-            <source src={currentSlide.video} type="video/mp4" />
-          </video>
-        ) : (
-          <Image
-            src={currentSlide.image}
-            alt={currentSlide.alt}
-            fill
-            priority={currentIndex === 0}
-            className={`object-cover ${
-              currentSlide.id === 2
-                ? 'object-[78%_center] sm:object-center'
-                : 'object-center'
-            }`}
-            sizes="100vw"
-            referrerPolicy="no-referrer"
-          />
-        )}
+        {HERO_SLIDES.map((slide, index) => {
+          const isActive = currentIndex === index;
+          return (
+            <div
+              key={slide.id}
+              className={`absolute inset-0 w-full h-full transition-opacity duration-500 ${
+                isActive ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'
+              }`}
+            >
+              {slide.video ? (
+                <video
+                  ref={isActive ? videoRef : undefined}
+                  autoPlay={isActive}
+                  muted
+                  playsInline
+                  preload={index === 0 ? 'auto' : 'metadata'}
+                  poster={slide.image}
+                  onEnded={() => {
+                    if (isPlaying && isActive) nextSlide();
+                  }}
+                  className="absolute inset-0 w-full h-full object-cover object-center"
+                  aria-label={slide.alt}
+                >
+                  <source src={slide.video} type="video/mp4" />
+                </video>
+              ) : (
+                <Image
+                  src={slide.image}
+                  alt={slide.alt}
+                  fill
+                  priority={true}
+                  quality={90}
+                  className={`object-cover ${
+                    slide.id === 2
+                      ? 'object-[78%_center] sm:object-center'
+                      : 'object-center'
+                  }`}
+                  sizes="100vw"
+                  referrerPolicy="no-referrer"
+                />
+              )}
+            </div>
+          );
+        })}
       </div>
 
       {/* Conteúdo Centralizado Sem Caixa de Texto e sem fade in/out */}
