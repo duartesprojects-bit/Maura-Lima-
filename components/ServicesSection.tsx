@@ -132,11 +132,11 @@ export default function ServicesSection() {
                   </div>
 
                   {/* Campo reservado para o preço do procedimento */}
-                  <div className="flex items-center justify-between pt-2.5 border-t border-neutral-100 text-xs">
-                    <span className="text-neutral-500 uppercase tracking-wider text-[11px] font-medium">
+                  <div className="flex items-center justify-between gap-3 pt-2.5 border-t border-neutral-100 text-xs">
+                    <span className="text-neutral-500 uppercase tracking-wider text-[11px] font-medium shrink-0">
                       Valor
                     </span>
-                    <span className="font-semibold text-[#0D0D0D] tabular-nums">
+                    <span className="font-semibold text-[#0D0D0D] tabular-nums text-right">
                       {service.price && service.price.trim() !== ''
                         ? service.price
                         : 'Sob consulta'}

@@ -183,7 +183,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "despigmentacao",
     category: "sobrancelhas-e-cilios",
     name: "Despigmentação",
-    price: "",
+    price: "A partir de R$ 250,00",
     titleH1: "Despigmentação em Fortaleza",
     shortSummary:
       "Método especializado em clareamento e remoção gradual de pigmentos indesejados de micropigmentações antigas. Procedimento seguro realizado com ativos e tecnologias que respeitam a integridade da pele e preservam a saúde dos pelos naturais na Aldeota.",
@@ -260,7 +260,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "design-de-sobrancelhas",
     category: "sobrancelhas-e-cilios",
     name: "Design de Sobrancelhas",
-    price: "",
+    price: "A partir de R$ 70,00",
     titleH1: "Design de Sobrancelhas em Fortaleza",
     shortSummary:
       "Mapeamento facial minucioso e exclusivo para realçar a simetria e a curvatura perfeita para o seu formato de rosto. Nosso método valoriza os fios naturais, corrigindo imperfeições sem afinar e sem perder a identidade e a elegância da sua expressão.",
@@ -353,7 +353,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "micropigmentacao-fio-a-fio",
     category: "sobrancelhas-e-cilios",
     name: "Micropigmentação Fio a Fio",
-    price: "",
+    price: "A partir de R$ 650,00",
     titleH1: "MICROPIGMENTAÇÃO DE SOBRANCELHAS FIO A FIO EM FORTALEZA",
     shortSummary:
       "A micropigmentação fio a fio é um procedimento semipermanente que desenha fios finos de pigmento na região das sobrancelhas, imitando a direção e o aspecto dos pelos naturais. O resultado é uma sobrancelha preenchida, simétrica e com aparência natural, que dura em média de 1 a 2 anos.",
@@ -450,7 +450,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "brow-lamination",
     category: "sobrancelhas-e-cilios",
     name: "Brow Lamination",
-    price: "",
+    price: "A partir de R$ 150,00",
     titleH1: "Brow Lamination em Fortaleza",
     shortSummary:
       "Técnica inovadora que alinha, disciplina e fixa os pelos das sobrancelhas para cima, proporcionando um efeito volumoso, encorpado e super moderno.",
@@ -475,7 +475,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "extensao-de-cilios-volume-brasileiro",
     category: "sobrancelhas-e-cilios",
     name: "Extensão de Cílios (Volume Brasileiro)",
-    price: "",
+    price: "A partir de R$ 180,00",
     titleH1: "Extensão de Cílios Volume Brasileiro em Fortaleza",
     shortSummary:
       "Fios tecnológicos ultrafinos em formato Y que conferem densidade marcante, leveza e durabilidade sem pesar. Proporciona o equilíbrio perfeito entre o efeito marcante do volume e a delicadeza de cílios naturalmente curvados e volumosos na Aldeota.",
@@ -571,7 +571,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "maquiagem-profissional",
     category: "estetica-e-beleza",
     name: "Maquiagem Profissional",
-    price: "",
+    price: "A partir de R$ 220,00",
     titleH1: "Maquiagem Profissional em Fortaleza",
     shortSummary:
       "Pele luminosa de alta durabilidade, acabamento acetinado e técnicas sofisticadas adaptadas ao clima tropical de Fortaleza. Ideal para eventos, casamentos, formaturas, ensaios fotográficos e comemorações especiais na Aldeota.",
@@ -664,7 +664,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "cabelo-e-coloracao",
     category: "cabelo",
     name: "Cabelo & Coloração",
-    price: "",
+    price: "A partir de R$ 150,00",
     titleH1: "Cabelo e Coloração em Fortaleza",
     shortSummary:
       "Loiros luminosos, morena iluminada com transição perfeita, tratamentos reconstrutores profundos e finalizações com escova de brilho espelhado. Atendimento exclusivo no coração da Aldeota focado na integridade e na saúde da fibra capilar.",
@@ -757,7 +757,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "hidratacao-nutricao-capilar",
     category: "cabelo",
     name: "Hidratação & Nutrição Capilar",
-    price: "",
+    price: "Combos a partir de R$ 100,00",
     titleH1: "Hidratação e Nutrição Capilar em Fortaleza",
     shortSummary:
       "Terapias capilares de reposição hídrica e lipídica profunda para devolver maciez, brilho espelhado, elasticidade e vitalidade aos fios ressecados ou quimicamente tratados na Aldeota.",
@@ -835,7 +835,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "corte-de-cabelo-masculino",
     category: "cabelo",
     name: "Corte de Cabelo Masculino",
-    price: "",
+    price: "A partir de R$ 80,00",
     titleH1: "Corte de Cabelo Masculino em Fortaleza",
     shortSummary:
       "Cortes modernos e clássicos com acabamento impecável, alinhamento de barba e atendimento personalizado em ambiente sofisticado na Aldeota.",
@@ -860,7 +860,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "unhas",
     category: "pes-e-maos",
     name: "Manicure & Pedicure",
-    price: "",
+    price: "Combos a partir de R$ 85,00",
     titleH1: "MANICURE E PEDICURE DE ALTO PADRÃO EM FORTALEZA",
     shortSummary:
       "Cuidados completos para mãos e pés com cutilagem milimétrica, esmaltação duradoura, blindagem e tratamentos de fortalecimento na Aldeota.",
@@ -959,7 +959,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "alongamento-de-unhas",
     category: "pes-e-maos",
     name: "Alongamento de Unhas",
-    price: "",
+    price: "A partir de R$ 180,00",
     titleH1: "Alongamento de Unhas em Fortaleza",
     shortSummary:
       "Alongamento em gel e fibra com curvatura natural, resistência impecável e acabamento fino. Ideal para quem busca unhas longas, simétricas e elegantes com aparência sofisticada na Aldeota.",
@@ -1040,7 +1040,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "podologia",
     category: "pes-e-maos",
     name: "Podologia",
-    price: "",
+    price: "A partir de R$ 130,00",
     titleH1: "Podologia Profissional em Fortaleza",
     shortSummary:
       "Saúde e cuidados especializados para os pés, prevenção de calosidades, unhas encravadas e higienização com rigor clínico.",
@@ -1065,7 +1065,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "spa-dos-pes",
     category: "pes-e-maos",
     name: "Spa dos Pés",
-    price: "",
+    price: "A partir de R$ 110,00",
     titleH1: "Spa dos Pés em Fortaleza",
     shortSummary:
       "Protocolo relaxante de hidratação profunda, esfoliação renovadora e massagem revigorante para pés macios e leves.",
@@ -1090,7 +1090,7 @@ export const SERVICES: ServiceItem[] = [
     slug: "banho-de-lua",
     category: "estetica-e-beleza",
     name: "Banho de Lua",
-    price: "",
+    price: "A partir de R$ 150,00",
     titleH1: "Banho de Lua em Fortaleza",
     shortSummary:
       "Ritual completo de clareamento suave dos pelos corporais com proteção da pele, esfoliação renovadora e hidratação intensa para uma pele luminosa, macia e dourada na Aldeota.",
