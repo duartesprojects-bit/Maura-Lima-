@@ -40,8 +40,8 @@ export default function HeroCarousel() {
   useEffect(() => {
     if (!isPlaying) return;
 
-    // Slide 1 has the 8-second video; Slide 4 has the 14-second cabelo.mp4 video
-    const duration = currentSlide.id === 1 ? 8000 : currentSlide.id === 4 ? 14000 : 6000;
+    // Slide 1 and Slide 4 both have ~8-second videos
+    const duration = currentSlide.id === 1 || currentSlide.id === 4 ? 8000 : 6000;
 
     const timer = setTimeout(() => {
       nextSlide();
