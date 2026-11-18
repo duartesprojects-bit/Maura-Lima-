@@ -2,6 +2,9 @@ import type { StaticImageData } from "next/image";
 import spaDosPesImage from "@/src/assets/images/regenerated_image_1793668533159.jpg";
 import despigmentacaoImage from "@/src/assets/images/regenerated_image_1793668752352.png";
 import unhasImage from "@/src/assets/images/regenerated_image_1794083916135.jxl";
+import banhoDeLuaImage from "@/src/assets/images/banho_de_lua_1795022809214.jpg";
+import hidratacaoNutricaoCapilarImage from "@/src/assets/images/hidratacao_nutricao_capilar_1795023278954.jpg";
+import alongamentoDeUnhasImage from "@/src/assets/images/alongamento_de_unhas_1795023278956.jpg";
 
 export interface ServiceItem {
   id: string;
@@ -415,6 +418,29 @@ export const SERVICES: ServiceItem[] = [
     whatsappMessage: "Olá! Gostaria de agendar Micropigmentação Fio a Fio na Maura Lima Aldeota.",
   },
   {
+    id: "brow-lamination",
+    slug: "brow-lamination",
+    name: "Brow Lamination",
+    titleH1: "Brow Lamination em Fortaleza",
+    shortSummary:
+      "Técnica inovadora que alinha, disciplina e fixa os pelos das sobrancelhas para cima, proporcionando um efeito volumoso, encorpado e super moderno.",
+    heroImage: "/browlamination.jpg",
+    altImage: "Brow Lamination profissional na Maura Lima Fortaleza",
+    indicatedFor: ["Sobrancelhas rebeldes, falhadas ou que buscam efeito encorpado e moderno."],
+    stepByStep: [
+      { step: 1, title: "Alinhamento dos Fios", description: "Aplicação de loção para moldar os fios na direção desejada." },
+      { step: 2, title: "Nutrição e Fixação", description: "Selamento e hidratação profunda para brilho duradouro." },
+    ],
+    duration: "45 a 60 minutos.",
+    expectedResults: "Sobrancelhas alinhadas, volumosas e com efeito impecável por semanas.",
+    preCare: ["Evitar extração ou pinça 15 dias antes."],
+    postCare: ["Não molhar nas primeiras 24 horas."],
+    contraindications: ["Pele extremamente sensibilizada na região."],
+    whenToSeekEvaluation: "Ideal para quem quer o visual trendy de sobrancelhas penteadas para cima.",
+    faqs: [{ question: "Quanto tempo dura?", answer: "Em média 4 a 6 semanas." }],
+    whatsappMessage: "Olá! Gostaria de agendar Brow Lamination na Maura Lima.",
+  },
+  {
     id: "extensao-de-cilios-volume-brasileiro",
     slug: "extensao-de-cilios-volume-brasileiro",
     name: "Extensão de Cílios (Volume Brasileiro)",
@@ -509,6 +535,97 @@ export const SERVICES: ServiceItem[] = [
       "Olá! Gostaria de agendar Extensão de Cílios Volume Brasileiro na Maura Lima Aldeota.",
   },
   {
+    id: "maquiagem-profissional",
+    slug: "maquiagem-profissional",
+    name: "Maquiagem Profissional",
+    titleH1: "Maquiagem Profissional em Fortaleza",
+    shortSummary:
+      "Pele luminosa de alta durabilidade, acabamento acetinado e técnicas sofisticadas adaptadas ao clima tropical de Fortaleza. Ideal para eventos, casamentos, formaturas, ensaios fotográficos e comemorações especiais na Aldeota.",
+    heroImage:
+      "/images/maquiagem.jpg",
+    altImage:
+      "Maquiagem profissional com pele radiante e durabilidade na Maura Lima Fortaleza",
+    indicatedFor: [
+      "Noivas, madrinhas, formandas e aniversariantes que exigem maquiagem à prova de lágrimas e calor.",
+      "Ensaios fotográficos e gravações profissionais em estúdio ou ao ar livre.",
+      "Quem busca valorizar a beleza natural com elegância, sem aspecto de pele pesada ou 'reboco'.",
+      "Eventos sociais diurnos ou noturnos em Fortaleza.",
+    ],
+    stepByStep: [
+      {
+        step: 1,
+        title: "Skincare Preparatório de Alta Fixação",
+        description:
+          "Limpeza, tonificação e hidratação direcionada ao tipo de pele, blindando contra o suor e umidade.",
+      },
+      {
+        step: 2,
+        title: "Uniformização e Correção Cromática",
+        description:
+          "Camadas finas de base e corretivo com cobertura construível, mantendo o viço natural.",
+      },
+      {
+        step: 3,
+        title: "Olhar Marcante e Cílios Postiços",
+        description:
+          "Esfumado elegante, delineado preciso e aplicação de tufos ou cílios inteiriços de fios naturais.",
+      },
+      {
+        step: 4,
+        title: "Selagem e Bruma Fixadora",
+        description:
+          "Pó translúcido ultrafino nas áreas estratégicas e spray fixador para resistência de até 16 horas.",
+      },
+    ],
+    duration: "Aproximadamente 60 a 80 minutos por atendimento.",
+    expectedResults:
+      "Pele aveludada, viçosa, resistente a abraços, calor e lágrimas, perfeita tanto ao vivo quanto nas fotos e vídeos.",
+    preCare: [
+      "Manter a pele bem hidratada nos dias que antecedem a produção.",
+      "Comparecer com o rosto limpo e sem maquiagem residual.",
+      "Se for usar vestido com decote ou de noiva, use roupa com botões ou zíper frontal para não estragar a make ao se trocar.",
+    ],
+    postCare: [
+      "Remover completamente com óleo demaquilante (cleansing oil) ou água micelar bifásica ao final do evento.",
+      "Lavar com sabonete facial apropriado e hidratar a pele após a higienização.",
+    ],
+    contraindications: [
+      "Crises de alergia cutânea grave ou conjuntivite ativa.",
+      "Queimaduras solares recentes ou descamação intensa no rosto.",
+    ],
+    whenToSeekEvaluation:
+      "Recomendamos reservar seu horário assim que souber a data do evento para garantir a disponibilidade da equipe na Aldeota.",
+    faqs: [
+      {
+        question: "A maquiagem resiste ao calor e à umidade de Fortaleza?",
+        answer:
+          "Sim! Nossos produtos e técnicas são especificamente selecionados para resistir ao clima cearense, com produtos blindados à prova d'água e de atrito.",
+      },
+      {
+        question: "Os cílios postiços já estão inclusos no valor?",
+        answer:
+          "Sim, a aplicação de cílios postiços de acabamento natural está inclusa em todas as nossas produções sociais.",
+      },
+      {
+        question: "Vocês realizam teste prévio para noivas?",
+        answer:
+          "Com certeza! O teste de maquiagem e penteado para noivas é realizado com antecedência para definir com calma cada detalhe do grande dia.",
+      },
+      {
+        question: "Posso levar fotos de referência do estilo que eu quero?",
+        answer:
+          "Com certeza! Incentivamos que traga suas referências de estilo para alinharmos as cores e o acabamento que mais valorizam o seu tom de pele e formato de olhos.",
+      },
+      {
+        question: "O atendimento pode ser feito no local do evento (home care / hotel)?",
+        answer:
+          "Disponibilizamos equipe externa para grupos e noivas sob consulta prévia de disponibilidade e deslocamento.",
+      },
+    ],
+    whatsappMessage:
+      "Olá! Gostaria de consultar horários para Maquiagem Profissional na Maura Lima Aldeota.",
+  },
+  {
     id: "cabelo-e-coloracao",
     slug: "cabelo-e-coloracao",
     name: "Cabelo & Coloração",
@@ -600,95 +717,103 @@ export const SERVICES: ServiceItem[] = [
       "Olá! Gostaria de agendar uma consulta capilar / coloração na Maura Lima Fortaleza.",
   },
   {
-    id: "maquiagem-profissional",
-    slug: "maquiagem-profissional",
-    name: "Maquiagem Profissional",
-    titleH1: "Maquiagem Profissional em Fortaleza",
+    id: "hidratacao-nutricao-capilar",
+    slug: "hidratacao-nutricao-capilar",
+    name: "Hidratação & Nutrição Capilar",
+    titleH1: "Hidratação e Nutrição Capilar em Fortaleza",
     shortSummary:
-      "Pele luminosa de alta durabilidade, acabamento acetinado e técnicas sofisticadas adaptadas ao clima tropical de Fortaleza. Ideal para eventos, casamentos, formaturas, ensaios fotográficos e comemorações especiais na Aldeota.",
-    heroImage:
-      "/images/maquiagem.jpg",
-    altImage:
-      "Maquiagem profissional com pele radiante e durabilidade na Maura Lima Fortaleza",
+      "Terapias capilares de reposição hídrica e lipídica profunda para devolver maciez, brilho espelhado, elasticidade e vitalidade aos fios ressecados ou quimicamente tratados na Aldeota.",
+    heroImage: hidratacaoNutricaoCapilarImage,
+    altImage: "Hidratação e nutrição capilar profissional com brilho intenso na Maura Lima Fortaleza",
     indicatedFor: [
-      "Noivas, madrinhas, formandas e aniversariantes que exigem maquiagem à prova de lágrimas e calor.",
-      "Ensaios fotográficos e gravações profissionais em estúdio ou ao ar livre.",
-      "Quem busca valorizar a beleza natural com elegância, sem aspecto de pele pesada ou 'reboco'.",
-      "Eventos sociais diurnos ou noturnos em Fortaleza.",
+      "Fios opacos, ásperos, com frizz ou sem movimento natural.",
+      "Cabelos que passaram por coloração, mechas ou ferramentas térmicas frequentes.",
+      "Quem busca cronograma capilar personalizado para fortalecer e selar as cutículas.",
+      "Preparação nutritiva antes ou depois de eventos e temporadas de praia e sol em Fortaleza.",
     ],
     stepByStep: [
       {
         step: 1,
-        title: "Skincare Preparatório de Alta Fixação",
+        title: "Diagnóstico da Fibra Capilar",
         description:
-          "Limpeza, tonificação e hidratação direcionada ao tipo de pele, blindando contra o suor e umidade.",
+          "Avaliação do grau de porosidade, ressecamento e necessidade de água ou lipídios nos fios.",
       },
       {
         step: 2,
-        title: "Uniformização e Correção Cromática",
+        title: "Higienização Preparatória Suave",
         description:
-          "Camadas finas de base e corretivo com cobertura construível, mantendo o viço natural.",
+          "Limpeza equilibrada do couro cabeludo e abertura controlada das cutículas para melhor absorção.",
       },
       {
         step: 3,
-        title: "Olhar Marcante e Cílios Postiços",
+        title: "Infusão de Ativos Hidratantes e Nutritivos",
         description:
-          "Esfumado elegante, delineado preciso e aplicação de tufos ou cílios inteiriços de fios naturais.",
+          "Aplicação enluvada mecha a mecha com máscaras de alta concentração, óleos nobres e pausa com ação potencializada.",
       },
       {
         step: 4,
-        title: "Selagem e Bruma Fixadora",
+        title: "Selagem das Cutículas e Finalização",
         description:
-          "Pó translúcido ultrafino nas áreas estratégicas e spray fixador para resistência de até 16 horas.",
+          "Enxágue técnico, proteção térmica e escova modelada com brilho espelhado e toque sedoso.",
       },
     ],
-    duration: "Aproximadamente 60 a 80 minutos por atendimento.",
+    duration: "Aproximadamente 45 a 75 minutos.",
     expectedResults:
-      "Pele aveludada, viçosa, resistente a abraços, calor e lágrimas, perfeita tanto ao vivo quanto nas fotos e vídeos.",
+      "Cabelos profundamente nutridos, alinhados, leves, com redução imediata do frizz e brilho luminoso.",
     preCare: [
-      "Manter a pele bem hidratada nos dias que antecedem a produção.",
-      "Comparecer com o rosto limpo e sem maquiagem residual.",
-      "Se for usar vestido com decote ou de noiva, use roupa com botões ou zíper frontal para não estragar a make ao se trocar.",
+      "Informar ao profissional os procedimentos químicos recentes realizados nos fios.",
     ],
     postCare: [
-      "Remover completamente com óleo demaquilante (cleansing oil) ou água micelar bifásica ao final do evento.",
-      "Lavar com sabonete facial apropriado e hidratar a pele após a higienização.",
+      "Manter lavagens com água morna ou fria e utilizar protetor térmico antes de secador ou chapinha.",
+      "Dar continuidade ao cronograma capilar indicado conforme a rotina dos fios.",
     ],
     contraindications: [
-      "Crises de alergia cutânea grave ou conjuntivite ativa.",
-      "Queimaduras solares recentes ou descamação intensa no rosto.",
+      "Feridas abertas ou irritações agudas no couro cabeludo.",
     ],
     whenToSeekEvaluation:
-      "Recomendamos reservar seu horário assim que souber a data do evento para garantir a disponibilidade da equipe na Aldeota.",
+      "Agende uma avaliação capilar se sentir os fios ressecados, elásticos, porosos ou sem brilho.",
     faqs: [
       {
-        question: "A maquiagem resiste ao calor e à umidade de Fortaleza?",
+        question: "Qual a diferença entre hidratação e nutrição capilar?",
         answer:
-          "Sim! Nossos produtos e técnicas são especificamente selecionados para resistir ao clima cearense, com produtos blindados à prova d'água e de atrito.",
+          "A hidratação repõe a água e a umidade natural da fibra, enquanto a nutrição repõe lipídios e óleos essenciais, combatendo o frizz, selando as cutículas e devolvendo maciez intensa.",
       },
       {
-        question: "Os cílios postiços já estão inclusos no valor?",
+        question: "Com que frequência devo fazer o tratamento no salão?",
         answer:
-          "Sim, a aplicação de cílios postiços de acabamento natural está inclusa em todas as nossas produções sociais.",
+          "Em média a cada 15 a 30 dias para manutenção preventiva, ou semanalmente no início caso o cabelo esteja muito sensibilizado.",
       },
       {
-        question: "Vocês realizam teste prévio para noivas?",
+        question: "Posso fazer no mesmo dia que escova ou corte?",
         answer:
-          "Com certeza! O teste de maquiagem e penteado para noivas é realizado com antecedência para definir com calma cada detalhe do grande dia.",
-      },
-      {
-        question: "Posso levar fotos de referência do estilo que eu quero?",
-        answer:
-          "Com certeza! Incentivamos que traga suas referências de estilo para alinharmos as cores e o acabamento que mais valorizam o seu tom de pele e formato de olhos.",
-      },
-      {
-        question: "O atendimento pode ser feito no local do evento (home care / hotel)?",
-        answer:
-          "Disponibilizamos equipe externa para grupos e noivas sob consulta prévia de disponibilidade e deslocamento.",
+          "Sim! A hidratação ou nutrição combinada ao corte e à escova potencializa ainda mais o caimento e o brilho final.",
       },
     ],
     whatsappMessage:
-      "Olá! Gostaria de consultar horários para Maquiagem Profissional na Maura Lima Aldeota.",
+      "Olá! Gostaria de agendar Hidratação & Nutrição Capilar na Maura Lima Fortaleza.",
+  },
+  {
+    id: "corte-de-cabelo-masculino",
+    slug: "corte-de-cabelo-masculino",
+    name: "Corte de Cabelo Masculino",
+    titleH1: "Corte de Cabelo Masculino em Fortaleza",
+    shortSummary:
+      "Cortes modernos e clássicos com acabamento impecável, alinhamento de barba e atendimento personalizado em ambiente sofisticado na Aldeota.",
+    heroImage: "/assets/aistudio/IMG_0384_d056d998.jpg",
+    altImage: "Corte de cabelo masculino profissional em Fortaleza",
+    indicatedFor: ["Homens que buscam visual alinhado, moderno e elegante."],
+    stepByStep: [
+      { step: 1, title: "Alinhamento do Estilo", description: "Consulta rápida sobre o corte desejado." },
+      { step: 2, title: "Corte e Acabamento", description: "Execução com tesoura e máquina com precisão." },
+    ],
+    duration: "40 a 50 minutos.",
+    expectedResults: "Visual renovado, elegante e corte simétrico.",
+    preCare: ["Nenhum cuidado especial prévio."],
+    postCare: ["Manutenção do corte a cada 3 a 4 semanas."],
+    contraindications: ["Nenhuma contraindicação."],
+    whenToSeekEvaluation: "Agende quando precisar renovar o corte ou alinhar o visual.",
+    faqs: [{ question: "Inclui acabamento de barba?", answer: "Sim, oferecemos opções completas." }],
+    whatsappMessage: "Olá! Gostaria de agendar Corte de Cabelo Masculino na Maura Lima.",
   },
   {
     id: "unhas-manicure-pedicure",
@@ -788,50 +913,83 @@ export const SERVICES: ServiceItem[] = [
       "Olá! Gostaria de agendar Unhas / Manicure e Pedicure na Maura Lima Aldeota.",
   },
   {
-    id: "corte-de-cabelo-masculino",
-    slug: "corte-de-cabelo-masculino",
-    name: "Corte de Cabelo Masculino",
-    titleH1: "Corte de Cabelo Masculino em Fortaleza",
+    id: "alongamento-de-unhas",
+    slug: "alongamento-de-unhas",
+    name: "Alongamento de Unhas",
+    titleH1: "Alongamento de Unhas em Fortaleza",
     shortSummary:
-      "Cortes modernos e clássicos com acabamento impecável, alinhamento de barba e atendimento personalizado em ambiente sofisticado na Aldeota.",
-    heroImage: "/CorteMasculino.jpg",
-    altImage: "Corte de cabelo masculino profissional em Fortaleza",
-    indicatedFor: ["Homens que buscam visual alinhado, moderno e elegante."],
-    stepByStep: [
-      { step: 1, title: "Alinhamento do Estilo", description: "Consulta rápida sobre o corte desejado." },
-      { step: 2, title: "Corte e Acabamento", description: "Execução com tesoura e máquina com precisão." },
+      "Alongamento em gel e fibra com curvatura natural, resistência impecável e acabamento fino. Ideal para quem busca unhas longas, simétricas e elegantes com aparência sofisticada na Aldeota.",
+    heroImage: alongamentoDeUnhasImage,
+    altImage: "Alongamento de unhas em gel com acabamento natural na Maura Lima Aldeota Fortaleza",
+    indicatedFor: [
+      "Quem deseja alongar unhas curtas, roídas ou com dificuldade de crescimento.",
+      "Pessoas que buscam resistência superior sem abrir mão da leveza e naturalidade na espessura.",
+      "Quem prefere manter a esmaltação intacta por semanas com formato elegante (amendoada, quadrada, bailarina ou squoval).",
+      "Noivas, formandas e clientes com rotina intensa que exigem mãos sempre impecáveis.",
     ],
-    duration: "40 a 50 minutos.",
-    expectedResults: "Visual renovado, elegante e corte simétrico.",
-    preCare: ["Nenhum cuidado especial prévio."],
-    postCare: ["Manutenção do corte a cada 3 a 4 semanas."],
-    contraindications: ["Nenhuma contraindicação."],
-    whenToSeekEvaluation: "Agende quando precisar renovar o corte ou alinhar o visual.",
-    faqs: [{ question: "Inclui acabamento de barba?", answer: "Sim, oferecemos opções completas." }],
-    whatsappMessage: "Olá! Gostaria de agendar Corte de Cabelo Masculino na Maura Lima.",
-  },
-  {
-    id: "spa-dos-pes",
-    slug: "spa-dos-pes",
-    name: "Spa dos Pés",
-    titleH1: "Spa dos Pés em Fortaleza",
-    shortSummary:
-      "Protocolo relaxante de hidratação profunda, esfoliação renovadora e massagem revigorante para pés macios e leves.",
-    heroImage: spaDosPesImage,
-    altImage: "Spa dos pés relaxante na Maura Lima Fortaleza",
-    indicatedFor: ["Pés cansados, ressecados ou que buscam relaxamento profundo."],
     stepByStep: [
-      { step: 1, title: "Escalda-pés e Esfoliação", description: "Remoção de células mortas e relaxamento." },
-      { step: 2, title: "Hidratação e Massagem", description: "Aplicação de cremes nobres e massagem relaxante." },
+      {
+        step: 1,
+        title: "Preparação Anatômica e Assepsia",
+        description:
+          "Higienização completa, afastamento delicado da cutícula e preparação técnica da lâmina natural.",
+      },
+      {
+        step: 2,
+        title: "Aplicação da Estrutura em Gel ou Fibra",
+        description:
+          "Construção cuidadosa do comprimento e da curvatura C com materiais hipoalergênicos de alta performance.",
+      },
+      {
+        step: 3,
+        title: "Lixamento Técnico e Nivelamento",
+        description:
+          "Modelagem simétrica do formato escolhido garantindo ponta fina, ponto de tensão equilibrado e aspecto natural.",
+      },
+      {
+        step: 4,
+        title: "Esmaltação em Gel e Selagem Final",
+        description:
+          "Acabamento com top coat de alto brilho em cabine UV e hidratação nutritiva das cutículas.",
+      },
     ],
-    duration: "45 minutos.",
-    expectedResults: "Pés extremamente macios, renovados e alívio imediato do cansaço.",
-    preCare: ["Nenhum."],
-    postCare: ["Manter hidratação diária."],
-    contraindications: ["Lesões abertas nos pés."],
-    whenToSeekEvaluation: "Sempre que desejar relaxamento e cuidado profundo.",
-    faqs: [{ question: "O spa dos pés inclui cutilagem?", answer: "Pode ser integrado ao atendimento de podologia ou manicure." }],
-    whatsappMessage: "Olá! Gostaria de agendar Spa dos Pés na Maura Lima.",
+    duration: "Aproximadamente 1h40 a 2h30 para aplicação completa.",
+    expectedResults:
+      "Unhas alongadas com simetria perfeita, aspecto natural, alta resistência e brilho duradouro.",
+    preCare: [
+      "Evitar remover cutículas em casa nos dias anteriores ao procedimento.",
+      "Evitar aplicar óleos ou hidratantes pesados diretamente sobre as unhas no dia do atendimento.",
+    ],
+    postCare: [
+      "Não utilizar as unhas como alavanca para abrir latas, embalagens ou objetos rígidos.",
+      "Realizar a manutenção regular a cada 15 a 25 dias para preservar a estrutura e a saúde da unha natural.",
+      "Hidratar as cutículas diariamente com óleo específico.",
+    ],
+    contraindications: [
+      "Onicomicoses ativas, lesões ou infecções no leito ungueal.",
+      "Descolamentos severos da lâmina sem avaliação prévia.",
+    ],
+    whenToSeekEvaluation:
+      "Agende seu atendimento se você sonha com unhas longas, fortes e com acabamento sofisticado na Aldeota.",
+    faqs: [
+      {
+        question: "O alongamento danifica a unha natural?",
+        answer:
+          "Não, quando executado com preparação técnica correta, materiais de qualidade e remoção profissional segura, a saúde da unha natural é preservada.",
+      },
+      {
+        question: "De quanto em quanto tempo preciso fazer manutenção?",
+        answer:
+          "Recomendamos a manutenção a cada 15 a 25 dias, acompanhando o crescimento natural das suas unhas.",
+      },
+      {
+        question: "Posso escolher o formato e o comprimento?",
+        answer:
+          "Sim! Personalizamos o comprimento e o formato (amendoada, quadrada, oval, squoval ou bailarina) conforme o seu estilo e proporção das mãos.",
+      },
+    ],
+    whatsappMessage:
+      "Olá! Gostaria de agendar Alongamento de Unhas na Maura Lima Aldeota.",
   },
   {
     id: "podologia",
@@ -857,27 +1015,104 @@ export const SERVICES: ServiceItem[] = [
     whatsappMessage: "Olá! Gostaria de agendar Podologia na Maura Lima.",
   },
   {
-    id: "brow-lamination",
-    slug: "brow-lamination",
-    name: "Brow Lamination",
-    titleH1: "Brow Lamination em Fortaleza",
+    id: "spa-dos-pes",
+    slug: "spa-dos-pes",
+    name: "Spa dos Pés",
+    titleH1: "Spa dos Pés em Fortaleza",
     shortSummary:
-      "Técnica inovadora que alinha, disciplina e fixa os pelos das sobrancelhas para cima, proporcionando um efeito volumoso, encorpado e super moderno.",
-    heroImage: "/browlamination.jpg",
-    altImage: "Brow Lamination profissional na Maura Lima Fortaleza",
-    indicatedFor: ["Sobrancelhas rebeldes, falhadas ou que buscam efeito encorpado e moderno."],
+      "Protocolo relaxante de hidratação profunda, esfoliação renovadora e massagem revigorante para pés macios e leves.",
+    heroImage: spaDosPesImage,
+    altImage: "Spa dos pés relaxante na Maura Lima Fortaleza",
+    indicatedFor: ["Pés cansados, ressecados ou que buscam relaxamento profundo."],
     stepByStep: [
-      { step: 1, title: "Alinhamento dos Fios", description: "Aplicação de loção para moldar os fios na direção desejada." },
-      { step: 2, title: "Nutrição e Fixação", description: "Selamento e hidratação profunda para brilho duradouro." },
+      { step: 1, title: "Escalda-pés e Esfoliação", description: "Remoção de células mortas e relaxamento." },
+      { step: 2, title: "Hidratação e Massagem", description: "Aplicação de cremes nobres e massagem relaxante." },
     ],
-    duration: "45 a 60 minutos.",
-    expectedResults: "Sobrancelhas alinhadas, volumosas e com efeito impecável por semanas.",
-    preCare: ["Evitar extração ou pinça 15 dias antes."],
-    postCare: ["Não molhar nas primeiras 24 horas."],
-    contraindications: ["Pele extremamente sensibilizada na região."],
-    whenToSeekEvaluation: "Ideal para quem quer o visual trendy de sobrancelhas penteadas para cima.",
-    faqs: [{ question: "Quanto tempo dura?", answer: "Em média 4 a 6 semanas." }],
-    whatsappMessage: "Olá! Gostaria de agendar Brow Lamination na Maura Lima.",
+    duration: "45 minutos.",
+    expectedResults: "Pés extremamente macios, renovados e alívio imediato do cansaço.",
+    preCare: ["Nenhum."],
+    postCare: ["Manter hidratação diária."],
+    contraindications: ["Lesões abertas nos pés."],
+    whenToSeekEvaluation: "Sempre que desejar relaxamento e cuidado profundo.",
+    faqs: [{ question: "O spa dos pés inclui cutilagem?", answer: "Pode ser integrado ao atendimento de podologia ou manicure." }],
+    whatsappMessage: "Olá! Gostaria de agendar Spa dos Pés na Maura Lima.",
+  },
+  {
+    id: "banho-de-lua",
+    slug: "banho-de-lua",
+    name: "Banho de Lua",
+    titleH1: "Banho de Lua em Fortaleza",
+    shortSummary:
+      "Ritual completo de clareamento suave dos pelos corporais com proteção da pele, esfoliação renovadora e hidratação intensa para uma pele luminosa, macia e dourada na Aldeota.",
+    heroImage: banhoDeLuaImage,
+    altImage: "Banho de Lua corporal com hidratação e esfoliação na Maura Lima Aldeota Fortaleza",
+    indicatedFor: [
+      "Quem deseja pelos corporais suavemente dourados com aparência delicada e uniforme.",
+      "Pessoas que buscam renovação celular, remoção de células mortas e pele acetinada.",
+      "Preparação especial para verão, praia, viagens, casamentos e eventos em Fortaleza.",
+      "Quem busca um momento relaxante de autocuidado corporal sem irritar a pele.",
+    ],
+    stepByStep: [
+      {
+        step: 1,
+        title: "Proteção Cutânea com Óleos e Parafina",
+        description:
+          "Aplicação de barreira protetora nutritiva que blinda a pele contra pinicamentos e ressecamento.",
+      },
+      {
+        step: 2,
+        title: "Clareamento Suave dos Pelos",
+        description:
+          "Aplicação controlada de ativos clareadores com ação rápida e uniforme para tom dourado natural.",
+      },
+      {
+        step: 3,
+        title: "Esfoliação Renovadora",
+        description:
+          "Remoção delicada de células mortas para desobstruir os poros e revelar uma textura lisa.",
+      },
+      {
+        step: 4,
+        title: "Hidratação Profunda Iluminadora",
+        description:
+          "Massagem finalizadora com creme hidratante de alta nutrição para viço, maciez e conforto imediato.",
+      },
+    ],
+    duration: "Aproximadamente 50 a 60 minutos.",
+    expectedResults:
+      "Pelos suavemente dourados, pele uniforme, extremamente hidratada, sedosa e com brilho natural.",
+    preCare: [
+      "Evitar exposição solar intensa ou bronzeamento nas 48 horas anteriores.",
+      "Não realizar esfoliação caseira agressiva no dia do procedimento.",
+    ],
+    postCare: [
+      "Manter a hidratação corporal diária e aplicar protetor solar nas áreas expostas.",
+      "Evitar exposição direta ao sol forte nas primeiras 24 horas.",
+    ],
+    contraindications: [
+      "Lesões abertas, alergias ativas ou queimaduras solares recentes na pele.",
+      "Sensibilidade conhecida a componentes clareadores (realizamos teste prévio quando necessário).",
+    ],
+    whenToSeekEvaluation:
+      "Agende seu Banho de Lua para renovar a pele, realçar o bronzeado e viver um momento de spa e bem-estar na Aldeota.",
+    faqs: [
+      {
+        question: "O Banho de Lua causa pinicamento ou irritação na pele?",
+        answer:
+          "Nosso protocolo inclui proteção prévia com óleos e parafina nutritiva antes do clareamento, reduzindo drasticamente o desconforto e protegendo a barreira da pele.",
+      },
+      {
+        question: "Posso fazer Banho de Lua antes de ir à praia ou viajar?",
+        answer:
+          "Sim! Recomendamos realizar com 24 a 48 horas de antecedência para que a pele esteja descansada, hidratada e com os pelos dourados em destaque.",
+      },
+      {
+        question: "Quais regiões do corpo podem receber o procedimento?",
+        answer:
+          "Pode ser realizado em corpo completo ou em áreas específicas como braços, pernas, costas e abdômen, conforme sua preferência.",
+      },
+    ],
+    whatsappMessage: "Olá! Gostaria de agendar Banho de Lua na Maura Lima Fortaleza.",
   },
 ];
 

@@ -81,7 +81,7 @@ export default function HomePage() {
                   />
                   <div className="absolute top-4 left-4">
                     <span className="px-3.5 py-1 bg-white/95 text-[#0D0D0D] text-[10px] font-bold uppercase tracking-widest border border-[#C9A24B]/50 shadow-sm rounded-full">
-                      0{index + 1}
+                      {String(index + 1).padStart(2, '0')}
                     </span>
                   </div>
                 </div>
