@@ -1,7 +1,7 @@
 import type { StaticImageData } from "next/image";
 import spaDosPesImage from "@/src/assets/images/regenerated_image_1793668533159.jpg";
 import despigmentacaoImage from "@/src/assets/images/regenerated_image_1793668752352.png";
-import unhasImage from "@/src/assets/images/regenerated_image_1794083916135.jxl";
+import unhasImage from "@/src/assets/images/manicure_pedicure.jpg";
 import banhoDeLuaImage from "@/src/assets/images/banho_de_lua_1795022809214.jpg";
 import hidratacaoNutricaoCapilarImage from "@/src/assets/images/hidratacao_nutricao_capilar_1795023278954.jpg";
 import alongamentoDeUnhasImage from "@/src/assets/images/alongamento_de_unhas_1795023278956.jpg";
